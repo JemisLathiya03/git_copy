@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard-Admin</title>
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid main-component main-component-patient p-0">
+        <header class="dashboard-header shadow-lg mb-5 bg-body rounded nav-patient">
+            <div class="dashboard-nav-1">
+                <div class="dashboard-logo">
+                    <img src="images/plateform-image.svg" alt="" srcset="">
+                </div>
+                <div class="dashboard-content">
+                    <div class="dark-mode-btn-dashboard">
+                        <button type="button" id="plateform-dark" onclick="togglrtodarkplateformlogin()" class="btn btn-mode"><img src="images/moon.svg" alt="" srcset=""></button>
+
+                        <button type="button" id="plateform-light" onclick="togglrtolightplateformlogin()" class="btn btn-mode"><img src="images/sun.svg" alt="" srcset=""></button>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr class="admin-dashboard-hr-tag">
+
+        </header>
+
+        <div class="below-nav-content m-3 main-component-below-padding">
+            <div class="submit-request-content">
+                <div class="submit-request-header">
+                    <div class="submit-request-header-content">I am a...</div>
+                    <a href="javascript: history.go(-1)" class="custom-back-button">
+                            <div class="back-button-icon">
+                                <img src="images/left_arrow.svg" alt="" srcset="">
+                            </div>
+                            <div class="back-button-content">
+                                Back
+                            </div>
+                      
+                    </a>
+                </div>
+                <div class="submit-request-different-type">
+                    <a href="patient_request.html" class="submit-request-type submit-request-type-patient">
+                        PATIENT
+                    </a>
+                    <a href="family_friend_request.html" class="submit-request-type submit-request-type-family-friend">
+                        FAMILY/FRIEND
+                    </a>
+                    <a href="concierge.html" class="submit-request-type submit-request-type-concierge">
+                        CONCIERGE
+                    </a>
+                    <a href="business_request.html" class="submit-request-type submit-request-type-business-partners">
+                        BUSINESS PARTNERS
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="terms-and-condition-dashboard">
+                <a href="#">Terms of Condition </a> | <a href="#">Privacy Policy</a>
+            </div>
+        </footer>
+    </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/custom.js"></script>
+
+</body>
+
+</html>

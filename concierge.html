@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>patient_request</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/patient_request.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+    <div class="container-fluid main-component main-component-patient p-0">
+        <header class="dashboard-header shadow-lg navbar-below-margin bg-body rounded nav-patient">
+            <div class="dashboard-nav-1">
+                <div class="dashboard-logo">
+                    <img src="images/plateform-image.svg" alt="" srcset="">
+                </div>
+                <div class="dashboard-content">
+                    <div class="dark-mode-btn-dashboard">
+                        <button type="button" id="plateform-dark" onclick="togglrtodarkplateformlogin()" class="btn btn-mode"><img src="images/moon.svg" alt="" srcset=""></button>
+
+                        <button type="button" id="plateform-light" onclick="togglrtolightplateformlogin()" class="btn btn-mode"><img src="images/sun.svg" alt="" srcset=""></button>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr class="admin-dashboard-hr-tag">
+
+        </header>
+
+        <div class="below-nav-content m-3 main-component-below-padding">
+            <div class="main-request-form">
+                <a href="javascript: history.go(-1)" class="custom-back-button">
+                    <div class="back-button-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-chevron-left" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0" />
+                        </svg>
+                    </div>
+                    <div class="back-button-content">
+                        Back
+                    </div>
+
+                </a>
+                <div class="main-request-form-content main-request-form-patient">
+                    <div class="container-fluid">
+                        <form action="">
+                            <div class="row">
+                                <div class="col-12 form-sub-heading">
+                                    Concierge Information
+                                </div>
+                                <div class="col-12 form-after-heading">
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12 form-sub-content plateform-login-form">
+                                            <div class="plateform-input plateform-input-margin">
+                                                <input type="text" id="ConciergeRequestFirstName"
+                                                    class="plateform-input-form plateform-input-form-color plateform-input-form-three-word"
+                                                    placeholder=" ">
+                                                <label for="ConciergeRequestFirstName"
+                                                    class="plateform-lable-form">Your First
+                                                    Name</label>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-12 form-sub-content plateform-login-form">
+                                            <div class="plateform-input plateform-input-margin">
+                                                <input type="text" id="ConciergeRequestLastName"
+                                                    class="plateform-input-form plateform-input-form-color plateform-input-form-three-word"
+                                                    placeholder=" ">
+                                                <label for="ConciergeRequestLastName"
+                                                    class="plateform-lable-form">Your Last
+                                                    Name</label>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12 form-sub-content plateform-login-form">
+                                            <div class="plateform-input plateform-input-margin">
+                                                <input id="ConciergePhone" type="tel" name="phone"
+                                                    class="plateform-input-form plateform-input-form-color"
+                                                    data-index="1" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-12 form-sub-content plateform-login-form">
+                                            <div class="plateform-input plateform-input-margin">
+                                                <input type="text" id="ConciergeRequstEmail"
+                                                    class="plateform-input-form plateform-input-form-color"
+                                                    placeholder=" ">
+                                                <label for="ConciergeRequstEmail" class="plateform-lable-form">Your
+                                                    Email</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12 form-sub-content plateform-login-form">
+                                            <div class="plateform-input plateform-input-margin">
+                                                <input type="text" id="ConciergeHotelProperty"
+                                                    class="plateform-input-form plateform-input-form-color plateform-input-form-three-word-relation"
+                                                    placeholder=" ">
+                                                <label for="ConciergeHotelProperty"
+                                                    class="plateform-lable-form">Hotel/Property Name</label>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                            <div class="row">
+                                <div class="col-12 form-sub-heading">
+                                    Concierge Location
+                                </div>
+                                <div class="col-12 form-after-heading">
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12 form-sub-content plateform-login-form">
+                                            <div class="plateform-input plateform-input-margin">
+                                                <input type="text" id="ConciergeRequestStreet"
+                                                    class="plateform-input-form plateform-input-form-color plateform-input-form-one-word"
+                                                    placeholder=" ">
+                                                <label for="ConciergeRequestStreet"
+                                                    class="plateform-lable-form">Street</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-12 form-sub-content plateform-login-form">
+                                            <div class="plateform-input plateform-input-margin">
+                                                <input type="text" id="ConciergrRequestCity"
+                                                    class="plateform-input-form plateform-input-form-color plateform-input-form-one-word"
+                                                    placeholder=" ">
+                                                <label for="ConciergrRequestCity"
+                                                    class="plateform-lable-form">City</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12 form-sub-content plateform-login-form">
+                                            <div class="plateform-input plateform-input-margin">
+                                                <input type="text" id="ConciergeRequestState"
+                                                    class="plateform-input-form plateform-input-form-color plateform-input-form-one-word"
+                                                    placeholder=" ">
+                                                <label for="ConciergeRequestState"
+                                                    class="plateform-lable-form">State</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-12 form-sub-content plateform-login-form">
+                                            <div class="plateform-input plateform-input-margin">
+                                                <input type="text" id="ConciergeRequestZipCode"
+                                                    class="plateform-input-form plateform-input-form-color"
+                                                    placeholder=" ">
+                                                <label for="ConciergeRequestZipCode" class="plateform-lable-form">Zip
+                                                    Code</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                            <div class="row">
+                                <div class="col-12 form-sub-heading">
+                                    Patient Information
+                                </div>
+                                <div class="col-12 form-after-heading">
+                                    <div class="row">
+                                        <div class="col-md-12 form-sub-content plateform-login-form">
+                                            <div class="plateform-input plateform-input-margin">
+                                                <textarea class="plateform-input-form plateform-input-form-color plateform-input-form-textarea-word"
+                                                    placeholder=" " id="ConciergepatientRequestSymptoms"
+                                                    style="height: 100px"></textarea>
+                                                <label for="ConciergepatientRequestSymptoms"
+                                                    class="plateform-lable-form">Enter Brief Details Of Symptoms (Optional)</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12 form-sub-content plateform-login-form">
+                                            <div class="plateform-input plateform-input-margin">
+                                                <input type="text" id="ConciergepatientRequestFirstName"
+                                                    class="plateform-input-form plateform-input-form-color"
+                                                    placeholder=" ">
+                                                <label for="ConciergepatientRequestFirstName" class="plateform-lable-form">First
+                                                    Name</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-12 form-sub-content plateform-login-form">
+                                            <div class="plateform-input plateform-input-margin">
+                                                <input type="text" id="ConciergepatientRequestLastName"
+                                                    class="plateform-input-form plateform-input-form-color"
+                                                    placeholder=" ">
+                                                <label for="ConciergepatientRequestLastName" class="plateform-lable-form">Last
+                                                    Name</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12 form-sub-content plateform-login-form">
+                                            <div
+                                                class="plateform-input plateform-input-margin plateform-input-calender-form">
+                                                <input type="date" id="ConciergepatientRequestDateOfBirth"
+                                                    class="plateform-input-form plateform-input-form-color plateform-input-calender-form-calender"
+                                                    placeholder=" ">
+                                                <label for="ConciergepatientRequestDateOfBirth" class="plateform-lable-form">Date
+                                                    of
+                                                    Birth</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                            <div class="row">
+                                <div class="col-12 form-sub-heading">
+                                    Patient Contact Information
+                                </div>
+                                <div class="col-12 form-sub-after-heading">
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12 form-sub-content plateform-login-form">
+                                            <div class="plateform-input plateform-input-margin">
+                                                <input type="text" id="ConciergepatientRequestEmail"
+                                                    class="plateform-input-form plateform-input-form-color plateform-input-form-one-word"
+                                                    placeholder=" ">
+                                                <label for="ConciergepatientRequestEmail"
+                                                    class="plateform-lable-form">Email</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-12 form-sub-content plateform-login-form">
+                                            <div class="plateform-input plateform-input-margin">
+                                                <input id="ConciergeRequestPatientPhone" type="tel" name="phone"
+                                                    class="plateform-input-form plateform-input-form-color" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+
+                            <div class="row">
+                                <div class="col-12 form-sub-heading">
+                                    Patient Location
+                                </div>
+                                <div class="col-12 form-after-heading">
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12 form-sub-content plateform-login-form">
+                                            <div class="plateform-input plateform-input-margin">
+                                                <input type="text" id="ConciergepatientRequestRoom"
+                                                    class="plateform-input-form plateform-input-form-color plateform-input-form-multi-word"
+                                                    placeholder=" ">
+                                                <label for="ConciergepatientRequestRoom" class="plateform-lable-form">Room #
+                                                    /suite(Optional)</label>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                            <div class="row">
+                                <div class="col-12 form-submition-and-cancelation-button">
+                                    <input type="submit" value="Submit" class="form-submission-button">
+                                    <a href="#" class="form-cancelation-button">Cancel</a>
+                                </div>
+
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="terms-and-condition-dashboard">
+                <a href="#">Terms of Condition </a> | <a href="#">Privacy Policy</a>
+            </div>
+        </footer>
+    </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/custom.js"></script>
+
+    <script>
+         const phoneInputField = document.querySelector("#ConciergePhone");
+        const phoneInput = window.intlTelInput(phoneInputField, {
+            utilsScript:
+                "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+        });
+
+        const phoneInputField1 = document.querySelector("#ConciergeRequestPatientPhone");
+        const phoneInput1 = window.intlTelInput(phoneInputField1, {
+            utilsScript:
+                "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+        });
+
+
+        // $(window).on('scroll', function () {
+        //     positionItiContainer();
+        // });
+
+        // $('.iti__selected-flag').click(function () {
+        //     positionItiContainer();
+        // });
+
+        // var positionItiContainer = function () {
+        //     if ($('body.iti-mobile').length) {
+        //         var phoneElement = document.getElementById('PatientRequestPhone');
+        //         var selectedFlag = document.querySelector('.iti__selected-flag');
+        //         var phoneRect = phoneElement.getBoundingClientRect();
+        //         var selectedFlagRect = selectedFlag.getBoundingClientRect();
+
+        //         $('.iti--container').css('top', selectedFlagRect.bottom + 'px');
+        //         $('.iti--container').css('left', selectedFlagRect.left + 'px');
+        //     }
+        // };
+
+    </script>
+</body>
+
+
+</html>

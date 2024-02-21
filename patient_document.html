@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard-Patient</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/patient_dashboard.css">
+    <link rel="stylesheet" href="css/patient_document.css">
+    <link rel="stylesheet" href="css/bootstrap_form.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- Modal -->
+    <div class="modal fade zoom-in" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content project-modal-cutomize">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Create New request</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="dashboard-modal-combination-body-text">
+                        Here, I want to create new request for...
+                    </div>
+                    <div class="dashboard-modal-combination-body-button">
+                        <button type="button" class="dashboard-modal-body-button dashboard-modal-body-button-me"
+                            onclick="changeModalButtonCss(this)" id="dashboard-modal-body-button-me">
+                            Me
+                        </button>
+                        <button type="button"
+                            class="dashboard-modal-body-button dashboard-modal-body-button-someOneElse"
+                            onclick="changeModalButtonCss(this)" id="dashboard-modal-body-button-someOneElse">
+                            Some One Else
+                        </button>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="dashboard-modal-footer-conform-button">Continue</button>
+                    <button type="button" class="dashboard-modal-footer-cancle-button"
+                        data-bs-dismiss="modal">Cancle</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid main-container main-container-patient-dashbord p-0">
+        <header class="dashboard-header shadow-lg mb-5 bg-body rounded">
+            <div class="dashboard-nav-1">
+                <div class="dashboard-logo">
+                    <button type="button" id="dashboard-menubar"
+                        class="btn btn-mode admin-dashboard-toggle-sidebar"><svg xmlns="http://www.w3.org/2000/svg"
+                            width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                        </svg></button>
+                    <img src="images/plateform-image.svg" alt="" srcset="">
+                </div>
+                <div class="dashboard-content">
+                    <div class="dashboard-profile-content">
+                        <span>Welcome</span>
+                        <span class="dashboard-profile-content-major">Tests Testing</span>
+                    </div>
+
+                    <div class="dashboard-logout">
+                        <button type="button" id="plateform-dark" class="btn btn-mode dashboard-logout-icon"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0z" />
+                                <path fill-rule="evenodd"
+                                    d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z" />
+                            </svg></button>
+                        <button type="button" class="btn-mode dashboard-logout-button">Logout</button>
+                    </div>
+                    <div class="dark-mode-btn-dashboard">
+                        <button type="button" id="plateform-dark" class="btn btn-mode"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-moon" viewBox="0 0 16 16">
+                                <path
+                                    d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278M4.858 1.311A7.27 7.27 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.32 7.32 0 0 0 5.205-2.162q-.506.063-1.029.063c-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286" />
+                            </svg></button>
+
+                        <button type="button" id="plateform-light" class="btn btn-mode"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-brightness-high" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708" />
+                            </svg></button>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr class="admin-dashboard-hr-tag">
+
+            <div class="dashboard-nav-2">
+                <ul class="nav nav-underline">
+                    <li class="nav-item">
+                        <div class="dashboard-profile-content-nav-2">
+                            <span>Welcome</span>
+                            <span class="dashboard-profile-content-nav-2-major">Tests Testing</span>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="patient_dashboard.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="patient_profile.html">Profile</a>
+                    </li>
+                </ul>
+            </div>
+
+        </header>
+
+        <div class="below-nav-content below-nav-content-patient-dashboard below-nav-content-patient-document">
+            <div class="admin-dashboard-overley"></div>
+            <div class="container-fluid main-component-patient-dashboard">
+                <div class="patient-document-main-component">
+                    <div class="patient-document-heading-and-button">
+                        <div class="patient-document-heading">
+                            Documents
+                        </div>
+                        <div class="patient-document-button">
+                            <a href="javascript: history.go(-1)">
+                                <div class="back-button-icon">
+                                    <img src="images/left_arrow.svg" alt="" srcset="">
+                                </div>
+                                <div class="back-button-content">
+                                    Back
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="patient-document-below-main-component">
+                        <div class="patient-sub-heading-upload-button">
+                            <div class="patient-first-sub-heading">Patient Name</div>
+                            <div class="patient-second-sub-heading">
+                                <div class="patient-actual-name">BhoomiPrajapati</div>
+                                <div class="patient-actual-name-after">(MD101819PRBH0005)</div>
+                            </div>
+                            <div class="patient-document-paragraph-type-content">
+                                Check here to review and add files that you or the Client/Member has attached to the
+                                Request.
+                            </div>
+                            <div class="row">
+                                <div class="col-12 form-after-heading">
+                                    <div class="row">
+                                        <div class="col-md-12 col-sm-12 form-sub-content plateform-login-form">
+                                            <div
+                                                class="plateform-input-form-upload plateform-input plateform-input-margin">
+
+
+
+                                                <input type="file" id="patientRequestupload"
+                                                    class="form-chosse-file-hidden-input "
+                                                    onchange="updateFileName(this)">
+                                                <span id="customButton" class="plateform-input-form-upload-label"
+                                                    onclick="document.getElementById('patientRequestupload').click()">
+                                                    <img src="images/upload.svg" alt="" srcset="">
+                                                    <span>Upload</span>
+                                                </span>
+                                                <span id="fileName"
+                                                    onclick="document.getElementById('patientRequestupload').click()"
+                                                    class="plateform-input-form plateform-input-form-color plateform-input-form-upload-input">Select
+                                                    File</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="patient-document-sub-heading-and-button">
+                                <div class="patient-document-heading">
+                                    Documents
+                                </div>
+                                <div class="patient-document-button">
+                                    <a href="#">
+                                        <div class="download-all-button-content">
+                                            Download All
+                                        </div>
+                                        <div class="download-all-button-icon">
+                                            <img src="images/download.svg" alt="" srcset="">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="patient-document-table">
+                            <div class="row-dashboard-actual-table bootstrap-form-customize">
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col"><input class="form-check-input selectall" type="checkbox"
+                                                    value="option1"></th>
+                                                <th scope="col"></th>
+                                                <th scope="col">Uploader</th>
+                                                <th scope="col">
+                                                    <div class="patient-document-third-column"><span>Upload Date</span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            fill="currentColor" class="bi bi-arrow-down"
+                                                            viewBox="0 0 16 16">
+                                                            <path fill-rule="evenodd"
+                                                                d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1" />
+                                                        </svg>
+                                                    </div>
+                                                </th>
+                                                <th scope="col">Actions</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="patient-document-patient-field">
+                                                <td scope="row"><input class="form-check-input justone" type="checkbox"
+                                                    value="option1"></td>
+                                                <td>
+                                                    <div class="patient-document-pdf-image-content-format">
+                                                        <img src="./images/pdf.png" alt="" srcset="">
+                                                        dummy (1).pdf
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    Testing test
+
+                                                </td>
+                                                <td>Aug 4,2023</td>
+                                                <td>
+                                                    <div class="patient-document-action-button">
+                                                        <button type="button">
+                                                            <img src="images/download.svg" alt="" srcset="">
+                                                        </button>
+                                                    </div>
+                                                </td>
+
+                                            </tr>
+
+                                            <tr class="patient-document-patient-field">
+                                                <td scope="row"><input class="form-check-input justone" type="checkbox"
+                                                    value="option1"></td>
+                                                <td>
+                                                    <div class="patient-document-pdf-image-content-format">
+                                                        <img src="./images/pdf.png" alt="" srcset="">
+                                                        dummy (1).pdf
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    Testing test
+
+                                                </td>
+                                                <td>Aug 4,2023</td>
+                                                <td>
+                                                    <div class="patient-document-action-button">
+                                                        <button type="button">
+                                                            <img src="images/download.svg" alt="" srcset="">
+                                                        </button>
+                                                    </div>
+                                                </td>
+
+                                            </tr>
+
+                                            <tr class="patient-document-patient-field">
+                                                <td scope="row"><input class="form-check-input justone" type="checkbox"
+                                                    value="option1"></td>
+                                                <td>
+                                                    <div class="patient-document-pdf-image-content-format">
+                                                        <img src="./images/pdf.png" alt="" srcset="">
+                                                        dummy (1).pdf
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    Testing test
+
+                                                </td>
+                                                <td>Aug 4,2023</td>
+                                                <td>
+                                                    <div class="patient-document-action-button">
+                                                        <button type="button">
+                                                            <img src="images/download.svg" alt="" srcset="">
+                                                        </button>
+                                                    </div>
+                                                </td>
+
+                                            </tr>
+                                            
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="patient-document-mobile">
+                            <div class="patient-document-card">
+                                <div class="patient-document-mobile-checkbox-pdf">
+                                    <input class="patient-document-table-checkbox" type="checkbox" value="">
+                                    <img src="images/pdf.png" alt="" srcset="">
+                                    <span>dummy (1).pdf</span>
+                                </div>
+                                <div class="patient-document-mobile-uploader-name">
+                                    Testing tset
+                                </div>
+                                <div class="patient-document-mobile-uploader-date">
+                                    Aug 4,2023
+                                </div>
+                                <div class="patient-document-mobile-action-button">
+                                    <button type="button" class="dashboard-table-button">
+                                        <img src="images/download.svg" alt="" srcset="">
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/patient_dashboard.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard-Patient</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/patient_dashboard.css">
+    <link rel="stylesheet" href="css/popup.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+
+  <!-- Modal -->
+  <div class="modal fade zoom-in" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content project-modal-cutomize">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Create New request</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="dashboard-modal-combination-body-text">
+                Here, I want to create  new request for...
+            </div>
+            <div class="dashboard-modal-combination-body-button">
+                <button type="button" class="dashboard-modal-body-button patient-dashboard-modal-body-button patient-dashboard-modal-body-button-active" id="dashboard-modal-body-button-me">
+                    Me
+            </button>
+            <button type="button" class="dashboard-modal-body-button patient-dashboard-modal-body-button" id="dashboard-modal-body-button-someOneElse">
+                Some One Else
+            </button>
+            </div>
+            
+        </div>
+        <div class="modal-footer">
+            <a href="#" type="button" class="dashboard-modal-footer-conform-button patient-dashboard-modal-body-button-redirect" >Continue</a>
+          <button type="button" class="dashboard-modal-footer-cancle-button" data-bs-dismiss="modal">Cancle</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <div class="container-fluid main-container main-container-patient-dashbord p-0">
+        <header class="dashboard-header shadow-lg mb-5 bg-body rounded">
+            <div class="dashboard-nav-1">
+                <div class="dashboard-logo">
+                    <button type="button" id="dashboard-menubar"
+                        class="btn btn-mode admin-dashboard-toggle-sidebar"><img src="images/menubar.svg" alt="" srcset=""></button>
+                    <img src="images/plateform-image.svg" alt="" srcset="">
+                </div>
+                <div class="dashboard-content">
+                    <div class="dashboard-profile-content">
+                        <span>Welcome</span>
+                        <span class="dashboard-profile-content-major">Tests Testing</span>
+                    </div>
+
+                    <div class="dashboard-logout">
+                        <button type="button" id="plateform-dark" class="btn btn-mode dashboard-logout-icon"><img src="images/logout.svg" alt="" srcset=""></button>
+                        <button type="button" class="btn-mode dashboard-logout-button">Logout</button>
+                    </div>
+                    <div class="dark-mode-btn-dashboard">
+                        <button type="button" id="plateform-dark" class="btn btn-mode"></button>
+
+                        <button type="button" id="plateform-light" class="btn btn-mode"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-brightness-high" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708" />
+                            </svg></button>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr class="admin-dashboard-hr-tag">
+
+            <div class="dashboard-nav-2">
+                <ul class="nav nav-underline">
+                    <li class="nav-item">
+                        <div class="dashboard-profile-content-nav-2">
+                            <span>Welcome</span>
+                            <span class="dashboard-profile-content-nav-2-major">Tests Testing</span>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="patient_dashboard.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="patient_profile.html">Profile</a>
+                    </li>
+                </ul>
+            </div>
+
+        </header>
+
+        <div class="below-nav-content below-nav-content-patient-dashboard m-3">
+            <div class="admin-dashboard-overley"></div>
+            <div class="container-fluid main-component-patient-dashboard">
+                <div class="patient-dashboard-main-heading">
+                    Medical History
+                </div>
+                <div class="patient-dashboard-table">
+                    <div class="patient-dashboard-create-request-button">
+                        <button type="button" class="patient-dashboard-create-request-actual-button"
+                            data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                            <div class="patient-dashboard-create-request-actual-button-in-mobile">
+                                <img src="images/plus.svg" alt="" srcset="">
+                            </div>
+                            <div class="patient-dashboard-create-request-actual-button-in-desktop">
+                                Create New Request
+                            </div>
+                        </button>
+                    </div>
+                    <div class="patient-dashboard-actual-table">
+                        <div class="row-dashboard-actual-table">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">
+                                                <div class="patient-dashbord-first-column"><span>Created Date</span>
+                                                    <img src="images/down_arrow.svg" alt="" srcset="">
+                                                </div>
+                                            </th>
+                                            <th scope="col">Current Status</th>
+                                            <th scope="col">Provider</th>
+                                            <th scope="col">Document</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="patient-dashboard-patient-field">
+                                            <td scope="row">Sep 27,2023</td>
+                                            <td>Accepted</td>
+                                            <td>
+                                                <div class="patient-dashboard-provider-admin-button">
+                                                    <button type="button" class="dashboard-table-button m-1">
+                                                        <img src="images/admin_in_patient_dashboard.svg" alt="" srcset="">
+                                                        <span>
+                                                            Admin
+                                                        </span>
+                                                    </button>
+                                                    <button type="button" class="dashboard-table-button">
+                                                        <img src="images/admin_in_patient_dashboard.svg" alt="" srcset="">
+                                                        <span>
+                                                            Provider
+                                                        </span>
+                                                    </button>
+                                                </div>
+
+                                            </td>
+                                            <td>
+                                                <div class="patient-dashboard-provider-admin-button">
+                                                    <a href="patient_document.html" type="button" class="dashboard-table-button">
+                                                        <span>
+                                                            (1)
+                                                        </span>
+                                                        <span>
+                                                            Document
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </td>
+
+                                        </tr>
+
+                                        <tr class="patient-dashboard-patient-field">
+                                            <td scope="row">Sep 27,2023</td>
+                                            <td>Accepted</td>
+                                            <td>
+                                                <div class="patient-dashboard-provider-admin-button">
+                                                    <button type="button" class="dashboard-table-button m-1">
+                                                        <img src="images/admin_in_patient_dashboard.svg" alt="" srcset="">
+                                                        <span>
+                                                            Admin
+                                                        </span>
+                                                    </button>
+                                                    <button type="button" class="dashboard-table-button">
+                                                        <img src="images/admin_in_patient_dashboard.svg" alt="" srcset="">
+                                                        <span>
+                                                            Provider
+                                                        </span>
+                                                    </button>
+                                                </div>
+
+                                            </td>
+                                            <td>
+                                                <div class="patient-dashboard-provider-admin-button">
+                                                    <a href="patient_document.html" type="button" class="dashboard-table-button">
+                                                        <span>
+                                                            (1)
+                                                        </span>
+                                                        <span>
+                                                            Document
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </td>
+
+                                        </tr>
+
+                                        <tr class="patient-dashboard-patient-field">
+                                            <td scope="row">Sep 27,2023</td>
+                                            <td>Accepted</td>
+                                            <td>
+                                                <div class="patient-dashboard-provider-admin-button">
+                                                    <button type="button" class="dashboard-table-button m-1">
+                                                        <img src="images/admin_in_patient_dashboard.svg" alt="" srcset="">
+                                                        <span>
+                                                            Admin
+                                                        </span>
+                                                    </button>
+                                                    <button type="button" class="dashboard-table-button">
+                                                        <img src="images/admin_in_patient_dashboard.svg" alt="" srcset="">
+                                                        <span>
+                                                            Provider
+                                                        </span>
+                                                    </button>
+                                                </div>
+
+                                            </td>
+                                            <td>
+                                                <div class="patient-dashboard-provider-admin-button">
+                                                    <a href="patient_document.html" type="button" class="dashboard-table-button">
+                                                        <span>
+                                                            (1)
+                                                        </span>
+                                                        <span>
+                                                            Document
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </td>
+
+                                        </tr>
+
+                                        <tr class="patient-dashboard-patient-field">
+                                            <td scope="row">Sep 27,2023</td>
+                                            <td>Accepted</td>
+                                            <td>
+                                                <div class="patient-dashboard-provider-admin-button">
+                                                    <button type="button" class="dashboard-table-button m-1">
+                                                        <img src="images/admin_in_patient_dashboard.svg" alt="" srcset="">
+                                                        <span>
+                                                            Admin
+                                                        </span>
+                                                    </button>
+                                                    <button type="button" class="dashboard-table-button">
+                                                        <img src="images/admin_in_patient_dashboard.svg" alt="" srcset="">
+                                                        <span>
+                                                            Provider
+                                                        </span>
+                                                    </button>
+                                                </div>
+
+                                            </td>
+                                            <td>
+                                                <div class="patient-dashboard-provider-admin-button">
+                                                    <a href="patient_document.html" type="button" class="dashboard-table-button">
+                                                        <span>
+                                                            (1)
+                                                        </span>
+                                                        <span>
+                                                            Document
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </td>
+
+                                        </tr>
+
+                                        <tr class="patient-dashboard-patient-field">
+                                            <td scope="row">Sep 27,2023</td>
+                                            <td>Accepted</td>
+                                            <td>
+                                                <div class="patient-dashboard-provider-admin-button">
+                                                    <button type="button" class="dashboard-table-button m-1">
+                                                        <img src="images/admin_in_patient_dashboard.svg" alt="" srcset="">
+                                                        <span>
+                                                            Admin
+                                                        </span>
+                                                    </button>
+                                                    <button type="button" class="dashboard-table-button">
+                                                        <img src="images/admin_in_patient_dashboard.svg" alt="" srcset="">
+                                                        <span>
+                                                            Provider
+                                                        </span>
+                                                    </button>
+                                                </div>
+
+                                            </td>
+                                            <td>
+                                                <div class="patient-dashboard-provider-admin-button">
+                                                    <a href="patient_document.html" type="button" class="dashboard-table-button">
+                                                        <span>
+                                                            (1)
+                                                        </span>
+                                                        <span>
+                                                            Document
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </td>
+
+                                        </tr>
+
+                                        <tr class="patient-dashboard-patient-field">
+                                            <td scope="row">Sep 27,2023</td>
+                                            <td>Accepted</td>
+                                            <td>
+                                                <div class="patient-dashboard-provider-admin-button">
+                                                    <button type="button" class="dashboard-table-button m-1">
+                                                        <img src="images/admin_in_patient_dashboard.svg" alt="" srcset="">
+                                                        <span>
+                                                            Admin
+                                                        </span>
+                                                    </button>
+                                                    <button type="button" class="dashboard-table-button">
+                                                        <img src="images/admin_in_patient_dashboard.svg" alt="" srcset="">
+                                                        <span>
+                                                            Provider
+                                                        </span>
+                                                    </button>
+                                                </div>
+
+                                            </td>
+                                            <td>
+                                                <div class="patient-dashboard-provider-admin-button">
+                                                    <a href="patient_document.html" type="button" class="dashboard-table-button">
+                                                        <span>
+                                                            (1)
+                                                        </span>
+                                                        <span>
+                                                            Document
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </td>
+
+                                        </tr>
+
+                                        <tr class="patient-dashboard-patient-field">
+                                            <td scope="row">Sep 27,2023</td>
+                                            <td>Accepted</td>
+                                            <td>
+                                                <div class="patient-dashboard-provider-admin-button">
+                                                    <button type="button" class="dashboard-table-button m-1">
+                                                        <img src="images/admin_in_patient_dashboard.svg" alt="" srcset="">
+                                                        <span>
+                                                            Admin
+                                                        </span>
+                                                    </button>
+                                                    <button type="button" class="dashboard-table-button">
+                                                        <img src="images/admin_in_patient_dashboard.svg" alt="" srcset="">
+                                                        <span>
+                                                            Provider
+                                                        </span>
+                                                    </button>
+                                                </div>
+
+                                            </td>
+                                            <td>
+                                                <div class="patient-dashboard-provider-admin-button">
+                                                    <a href="patient_document.html" type="button" class="dashboard-table-button">
+                                                        <span>
+                                                            (1)
+                                                        </span>
+                                                        <span>
+                                                            Document
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </td>
+
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="row row-dashboard-mobile-main">
+                            <div class="patient-dashbord-main-detail-patient">
+                                <div class="container-fluid patient-dashbord-detail p-0">
+                                    <div class="patient-dashboard-mobile-open patient-dashbord-main-detail-padding">
+                                        <div
+                                            class="patient-dashboard-component-detail mb-3">
+                                            <img src="images/clock.svg" class="patient-dashboard-component-img" alt="" srcset="">
+                                            <span class="patient-dashboard-component-main-content">Created Date:</span>
+                                            <span class="patient-dashboard-component-sub-content">DEC 5, 2003</span>
+                                        </div>
+                                        <hr>
+
+
+                                    </div>
+
+                                    <div class="patient-dashboard-mobile-open-panel container-fluid patient-mobile-dashboard-padding"
+                                        id="admin-new-state-mobile-view-open">
+                                        <div class="patient-dashboard-sub-component-detail">
+                                            <div class="patient-dashboard-sub-component-img"><img src="images/person-add.svg" class="patient-dashboard-component-img" alt="" srcset=""></div>                                        
+                                            <span class="patient-dashboard-component-main-content">Provider:</span>
+                                            <span class="patient-dashboard-component-sub-content">-</span>
+                                        </div>
+                                        <div class="patient-dashboard-sub-component-detail">
+                                            <div class="patient-dashboard-sub-component-img"><img src="images/person.svg" class="patient-dashboard-component-img" alt="" srcset=""></div>                                        
+                                            <span class="patient-dashboard-component-main-content">Admin:</span>
+                                            <span class="patient-dashboard-component-sub-content">-</span>
+                                        </div>
+                                        <div class="patient-dashboard-sub-component-detail">
+                                            <div class="patient-dashboard-sub-component-img"><img src="images/tick.svg" class="patient-dashboard-component-img" alt="" srcset=""></div>                                        
+                                            <span class="patient-dashboard-component-main-content">CurrentStatus:</span>
+                                            <span class="patient-dashboard-component-sub-content">Cancelled By Admin</span>
+                                        </div>
+                                        <div class="patient-dashboard-sub-component-detail">
+                                            <div class="patient-dashboard-provider-admin-button">
+                                                <a href="patient_document.html" type="button" class="dashboard-table-button">
+                                                    <span>
+                                                        (1)
+                                                    </span>
+                                                    <span>
+                                                        Document
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                            <div class="patient-dashbord-main-detail-patient">
+                                <div class="container-fluid patient-dashbord-detail p-0">
+                                    <div class="patient-dashboard-mobile-open patient-dashbord-main-detail-padding">
+                                        <div
+                                            class="patient-dashboard-component-detail mb-3">
+                                            <img src="images/clock.svg" class="patient-dashboard-component-img" alt="" srcset="">
+                                            <span class="patient-dashboard-component-main-content">Created Date:</span>
+                                            <span class="patient-dashboard-component-sub-content">DEC 5, 2003</span>
+                                        </div>
+                                        <hr>
+
+
+                                    </div>
+
+                                    <div class="patient-dashboard-mobile-open-panel container-fluid patient-mobile-dashboard-padding"
+                                        id="admin-new-state-mobile-view-open">
+                                        <div class="patient-dashboard-sub-component-detail">
+                                            <div class="patient-dashboard-sub-component-img"><img src="images/person-add.svg" class="patient-dashboard-component-img" alt="" srcset=""></div>                                        
+                                            <span class="patient-dashboard-component-main-content">Provider:</span>
+                                            <span class="patient-dashboard-component-sub-content">-</span>
+                                        </div>
+                                        <div class="patient-dashboard-sub-component-detail">
+                                            <div class="patient-dashboard-sub-component-img"><img src="images/person.svg" class="patient-dashboard-component-img" alt="" srcset=""></div>                                        
+                                            <span class="patient-dashboard-component-main-content">Admin:</span>
+                                            <span class="patient-dashboard-component-sub-content">-</span>
+                                        </div>
+                                        <div class="patient-dashboard-sub-component-detail">
+                                            <div class="patient-dashboard-sub-component-img"><img src="images/tick.svg" class="patient-dashboard-component-img" alt="" srcset=""></div>                                        
+                                            <span class="patient-dashboard-component-main-content">CurrentStatus:</span>
+                                            <span class="patient-dashboard-component-sub-content">Cancelled By Admin</span>
+                                        </div>
+                                        <div class="patient-dashboard-sub-component-detail">
+                                            <div class="patient-dashboard-provider-admin-button">
+                                                <a href="patient_document.html" type="button" class="dashboard-table-button">
+                                                    <span>
+                                                        (1)
+                                                    </span>
+                                                    <span>
+                                                        Document
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                            <div class="patient-dashbord-main-detail-patient">
+                                <div class="container-fluid patient-dashbord-detail p-0">
+                                    <div class="patient-dashboard-mobile-open patient-dashbord-main-detail-padding">
+                                        <div
+                                            class="patient-dashboard-component-detail mb-3">
+                                            <img src="images/clock.svg" class="patient-dashboard-component-img" alt="" srcset="">
+                                            <span class="patient-dashboard-component-main-content">Created Date:</span>
+                                            <span class="patient-dashboard-component-sub-content">DEC 5, 2003</span>
+                                        </div>
+                                        <hr>
+
+
+                                    </div>
+
+                                    <div class="patient-dashboard-mobile-open-panel container-fluid patient-mobile-dashboard-padding"
+                                        id="admin-new-state-mobile-view-open">
+                                        <div class="patient-dashboard-sub-component-detail">
+                                            <div class="patient-dashboard-sub-component-img"><img src="images/person-add.svg" class="patient-dashboard-component-img" alt="" srcset=""></div>                                        
+                                            <span class="patient-dashboard-component-main-content">Provider:</span>
+                                            <span class="patient-dashboard-component-sub-content">-</span>
+                                        </div>
+                                        <div class="patient-dashboard-sub-component-detail">
+                                            <div class="patient-dashboard-sub-component-img"><img src="images/person.svg" class="patient-dashboard-component-img" alt="" srcset=""></div>                                        
+                                            <span class="patient-dashboard-component-main-content">Admin:</span>
+                                            <span class="patient-dashboard-component-sub-content">-</span>
+                                        </div>
+                                        <div class="patient-dashboard-sub-component-detail">
+                                            <div class="patient-dashboard-sub-component-img"><img src="images/tick.svg" class="patient-dashboard-component-img" alt="" srcset=""></div>                                        
+                                            <span class="patient-dashboard-component-main-content">CurrentStatus:</span>
+                                            <span class="patient-dashboard-component-sub-content">Cancelled By Admin</span>
+                                        </div>
+                                        <div class="patient-dashboard-sub-component-detail">
+                                            <div class="patient-dashboard-provider-admin-button">
+                                                <a href="patient_document.html" type="button" class="dashboard-table-button">
+                                                    <span>
+                                                        (1)
+                                                    </span>
+                                                    <span>
+                                                        Document
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                            <div class="patient-dashbord-main-detail-patient">
+                                <div class="container-fluid patient-dashbord-detail p-0">
+                                    <div class="patient-dashboard-mobile-open patient-dashbord-main-detail-padding">
+                                        <div
+                                            class="patient-dashboard-component-detail mb-3">
+                                            <img src="images/clock.svg" class="patient-dashboard-component-img" alt="" srcset="">
+                                            <span class="patient-dashboard-component-main-content">Created Date:</span>
+                                            <span class="patient-dashboard-component-sub-content">DEC 5, 2003</span>
+                                        </div>
+                                        <hr>
+
+
+                                    </div>
+
+                                    <div class="patient-dashboard-mobile-open-panel container-fluid patient-mobile-dashboard-padding"
+                                        id="admin-new-state-mobile-view-open">
+                                        <div class="patient-dashboard-sub-component-detail">
+                                            <div class="patient-dashboard-sub-component-img"><img src="images/person-add.svg" class="patient-dashboard-component-img" alt="" srcset=""></div>                                        
+                                            <span class="patient-dashboard-component-main-content">Provider:</span>
+                                            <span class="patient-dashboard-component-sub-content">-</span>
+                                        </div>
+                                        <div class="patient-dashboard-sub-component-detail">
+                                            <div class="patient-dashboard-sub-component-img"><img src="images/person.svg" class="patient-dashboard-component-img" alt="" srcset=""></div>                                        
+                                            <span class="patient-dashboard-component-main-content">Admin:</span>
+                                            <span class="patient-dashboard-component-sub-content">-</span>
+                                        </div>
+                                        <div class="patient-dashboard-sub-component-detail">
+                                            <div class="patient-dashboard-sub-component-img"><img src="images/tick.svg" class="patient-dashboard-component-img" alt="" srcset=""></div>                                        
+                                            <span class="patient-dashboard-component-main-content">CurrentStatus:</span>
+                                            <span class="patient-dashboard-component-sub-content">Cancelled By Admin</span>
+                                        </div>
+                                        <div class="patient-dashboard-sub-component-detail">
+                                            <div class="patient-dashboard-provider-admin-button">
+                                                <a href="patient_document.html" type="button" class="dashboard-table-button">
+                                                    <span>
+                                                        (1)
+                                                    </span>
+                                                    <span>
+                                                        Document
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                            <div class="patient-dashbord-main-detail-patient">
+                                <div class="container-fluid patient-dashbord-detail p-0">
+                                    <div class="patient-dashboard-mobile-open patient-dashbord-main-detail-padding">
+                                        <div
+                                            class="patient-dashboard-component-detail mb-3">
+                                            <img src="images/clock.svg" class="patient-dashboard-component-img" alt="" srcset="">
+                                            <span class="patient-dashboard-component-main-content">Created Date:</span>
+                                            <span class="patient-dashboard-component-sub-content">DEC 5, 2003</span>
+                                        </div>
+                                        <hr>
+
+
+                                    </div>
+
+                                    <div class="patient-dashboard-mobile-open-panel container-fluid patient-mobile-dashboard-padding"
+                                        id="admin-new-state-mobile-view-open">
+                                        <div class="patient-dashboard-sub-component-detail">
+                                            <div class="patient-dashboard-sub-component-img"><img src="images/person-add.svg" class="patient-dashboard-component-img" alt="" srcset=""></div>                                        
+                                            <span class="patient-dashboard-component-main-content">Provider:</span>
+                                            <span class="patient-dashboard-component-sub-content">-</span>
+                                        </div>
+                                        <div class="patient-dashboard-sub-component-detail">
+                                            <div class="patient-dashboard-sub-component-img"><img src="images/person.svg" class="patient-dashboard-component-img" alt="" srcset=""></div>                                        
+                                            <span class="patient-dashboard-component-main-content">Admin:</span>
+                                            <span class="patient-dashboard-component-sub-content">-</span>
+                                        </div>
+                                        <div class="patient-dashboard-sub-component-detail">
+                                            <div class="patient-dashboard-sub-component-img"><img src="images/tick.svg" class="patient-dashboard-component-img" alt="" srcset=""></div>                                        
+                                            <span class="patient-dashboard-component-main-content">CurrentStatus:</span>
+                                            <span class="patient-dashboard-component-sub-content">Cancelled By Admin</span>
+                                        </div>
+                                        <div class="patient-dashboard-sub-component-detail">
+                                            <div class="patient-dashboard-provider-admin-button">
+                                                <a href="patient_document.html" type="button" class="dashboard-table-button">
+                                                    <span>
+                                                        (1)
+                                                    </span>
+                                                    <span>
+                                                        Document
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/patient_dashboard.js"></script>
+
+</body>
+
+</html>

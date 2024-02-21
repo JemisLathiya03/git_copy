@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard-Patient</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/search_records.css">
+    <link rel="stylesheet" href="css/bootstrap_form.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <div
+        class="container-fluid main-container main-container-patient-dashbord main-component main-component-patient p-0">
+        <header class="dashboard-header shadow-lg mb-5 bg-body rounded">
+            <div class="dashboard-nav-1">
+                <div class="dashboard-logo">
+                    <button type="button" id="dashboard-menubar"
+                        class="btn btn-mode admin-dashboard-toggle-sidebar"><svg xmlns="http://www.w3.org/2000/svg"
+                            width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                        </svg></button>
+                    <img src="images/plateform-image.svg" alt="" srcset="">
+                </div>
+                <div class="dashboard-content">
+                    <div class="dashboard-profile-content">
+                        <span>Welcome</span>
+                        <span class="dashboard-profile-content-major">Admin admin2</span>
+                    </div>
+
+                    <div class="dashboard-logout">
+                        <button type="button" id="plateform-dark" class="btn btn-mode dashboard-logout-icon"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0z" />
+                                <path fill-rule="evenodd"
+                                    d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z" />
+                            </svg></button>
+                        <button type="button" class="btn-mode dashboard-logout-button">Logout</button>
+                    </div>
+                    <div class="dark-mode-btn-dashboard">
+                        <button type="button" id="plateform-dark" class="btn btn-mode"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-moon" viewBox="0 0 16 16">
+                                <path
+                                    d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278M4.858 1.311A7.27 7.27 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.32 7.32 0 0 0 5.205-2.162q-.506.063-1.029.063c-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286" />
+                            </svg></button>
+
+                        <button type="button" id="plateform-light" class="btn btn-mode"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-brightness-high" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708" />
+                            </svg></button>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr class="admin-dashboard-hr-tag">
+
+            <div class="dashboard-nav-2">
+                <ul class="nav nav-underline">
+                    <li class="nav-item">
+                        <div class="dashboard-profile-content-nav-2">
+                            <span>Welcome</span>
+                            <span class="dashboard-profile-content-nav-2-major">Admin admin2</span>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Provider Location</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">My Profile</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                            aria-expanded="false">Providers</a>
+                        <ul class="dropdown-menu admin-dashboard-sidebar-nav">
+                            <li><a class="dropdown-item" href="#">Provider</a></li>
+                            <li><a class="dropdown-item" href="#">Scheduling</a></li>
+                            <li><a class="dropdown-item" href="#">Invoicing</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">search-recordss</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                            aria-expanded="false">Access</a>
+                        <ul class="dropdown-menu admin-dashboard-sidebar-nav">
+                            <li><a class="dropdown-item" href="#">Provider</a></li>
+                            <li><a class="dropdown-item" href="#">Scheduling</a></li>
+                            <li><a class="dropdown-item" href="#">Invoicing</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                            aria-expanded="false">Records</a>
+                        <ul class="dropdown-menu admin-dashboard-sidebar-nav">
+                            <li><a class="dropdown-item" href="#">Provider</a></li>
+                            <li><a class="dropdown-item" href="#">Scheduling</a></li>
+                            <li><a class="dropdown-item" href="#">Invoicing</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+        </header>
+
+
+        <div
+            class="below-nav-content below-nav-content-admin-dashboard below-nav-content-admin main-component-below-padding">
+            <div class="admin-dashboard-overley"></div>
+            <div class="container-fluid main-component-admin-dashboard bootstrap-form-customize">
+                <div class="admin-all-main-component">
+                    <div class="admin-all-heading-and-button">
+                        <div class="admin-document-heading">
+                            Search Records
+
+                        </div>
+                        <div class="serch-records-export-to-excel">
+                            <img src="images/clock-black.svg" alt="" srcset="">
+                            <div class="serch-records-export-to-excel-content">
+                                Export Data To Excel
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="admin-below-all-main-component bootstrap-form-customize">
+                        <div class="search-records-main-component">
+                            <div class="search-records-search-create-button container-fluid">
+                                <div class="search-records-search">
+                                    <div class="row">
+                                        <div class="col-lg-3 col-md-6 col-sm-12 col-12 mb-3">
+                                            <select class="form-select on-select" id="select"
+                                                aria-label="Default select example">
+                                                <option selected>Select Request Status</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6 col-sm-12 col-12 mb-3">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control plain-text on-select"
+                                                    id="floatingPassword" placeholder="Password">
+                                                <label for="floatingPassword" class="plain-text-label">Patient
+                                                    Name</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6 col-sm-12 col-12 mb-3">
+                                            <select class="form-select on-select" id="select"
+                                                aria-label="Default select example">
+                                                <option selected>Select Request Type</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6 col-sm-12 col-12 mb-3">
+                                            <div class="form-floating">
+                                                <input type="date" class="form-control plain-text on-select"
+                                                    id="floatingPassword" placeholder="Password">
+                                                <label for="floatingPassword" class="plain-text-label">From Date Of
+                                                    Service</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-3 col-md-6 col-sm-12 col-12 mb-3">
+                                            <div class="form-floating">
+                                                <input type="date" class="form-control plain-text on-select"
+                                                    id="floatingPassword" placeholder="Password">
+                                                <label for="floatingPassword" class="plain-text-label">To Date Of
+                                                    Service</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6 col-sm-12 col-12 mb-3">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control plain-text on-select"
+                                                    id="floatingPassword" placeholder="Password">
+                                                <label for="floatingPassword" class="plain-text-label">Provider
+                                                    Name</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6 col-sm-12 col-12 mb-3">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control plain-text on-select"
+                                                    id="floatingPassword" placeholder="Password">
+                                                <label for="floatingPassword" class="plain-text-label">Email</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6 col-sm-12 col-12 mb-3">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control plain-text on-select"
+                                                    id="floatingPassword" placeholder="Password">
+                                                <label for="floatingPassword" class="plain-text-label">Phone
+                                                    Number</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="search-records-buttons">
+                                    <button type="button" class="search-records-button-select-all"
+                                        id="select-all-checkbox">Select All</button>
+                                    <button type="button" class="search-records-button-clear">Clear</button>
+                                    <button type="button" class="search-records-button-search">Search</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="search-records-document-table">
+                            <div class="row-dashboard-actual-table">
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Patient Name</th>
+                                                <th scope="col">
+                                                    Requestor
+                                                </th>
+                                                <th scope="col">Date Of Service</th>
+                                                <th scope="col">
+                                                    <div><span>Close Case Date</span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            fill="currentColor" class="bi bi-arrow-down"
+                                                            viewBox="0 0 16 16">
+                                                            <path fill-rule="evenodd"
+                                                                d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1" />
+                                                        </svg>
+                                                    </div>
+                                                </th>
+                                                <th scope="col">Email</th>
+                                                <th scope="col">Phone Number</th>
+                                                <th scope="col">Address</th>
+                                                <th scope="col">Zip</th>
+                                                <th scope="col">Request Status</th>
+                                                <th scope="col">Physician</th>
+                                                <th scope="col">Physician Note</th>
+                                                <th scope="col">Cancelled By Provider Note</th>
+                                                <th scope="col">Admin note</th>
+                                                <th scope="col">Patient Note</th>
+                                                <th scope="col">Delete Permanently</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="search-records-document-patient-field">
+                                                <td scope="row">testMsg,testMsg
+                                                </td>
+                                                <td scope="row">Patient
+                                                </td>
+                                                <td>
+                                                    Aug 23,2023
+                                                </td>
+                                                <td>Oct 10,2023</td>
+                                                <td>test@gmail.com</td>
+                                                <td>+1 (202) 256-9787</td>
+                                                <td>123,Baltimore, Maryland</td>
+                                                <td>20810</td>
+                                                <td>Closed</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>
+                                                    <div class="search-records-document-action-button">
+                                                        <button type="button">
+                                                            Delete
+                                                        </button>
+                                                    </div>
+                                                </td>
+
+                                            </tr>
+
+
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div class="row row-dashboard-mobile-main">
+                                <div class="patient-dashbord-main-detail-patient">
+                                    <div class="container-fluid search-records-detail p-0">
+                                        <div class="search-records-mobile-open search-records-main-detail-padding">
+                                            <div class="search-records-main-internal-component">
+                                                <div class="search-records-checkbox-content">
+                                                    <div class="search-records-main-content-with-checkbox">
+                                                        <input class="form-check-input on-selection-checkox"
+                                                            type="checkbox" value="option1">
+                                                        <div class="search-records-with-checkbox-heading">
+                                                            Reject, Newnew
+                                                        </div>
+                                                    </div>
+                                                    <div class="search-records-main-content">
+                                                        Dc, Dc, Dc
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                        </div>
+
+                                        <div class="search-records-mobile-open-panel container-fluid patient-mobile-dashboard-padding"
+                                            id="admin-new-state-mobile-view-open">
+                                            <div class="search-records-internal-sub-component">
+                                                <div class="search-records-img-content-sub mb-2">
+                                                    <img src="images/clock.svg" alt="" srcset="">
+                                                    <div class="search-records-internal-sub-content">
+                                                        Requestor:
+                                                    </div>
+                                                    <div class="search-records-internal-sub-sub-content">
+                                                        Family/Friend
+                                                    </div>
+                                                </div>
+
+                                                <div class="search-records-img-content-sub mb-2">
+                                                    <img src="images/clock.svg" alt="" srcset="">
+                                                    <div class="search-records-internal-sub-content">
+                                                        Date Of Service:
+                                                    </div>
+                                                    <div class="search-records-internal-sub-sub-content">
+                                                        -
+                                                    </div>
+                                                </div>
+
+                                                <div class="search-records-img-content-sub mb-2">
+                                                    <img src="images/clock.svg" alt="" srcset="">
+                                                    <div class="search-records-internal-sub-content">
+                                                        Case Close Date:
+                                                    </div>
+                                                    <div class="search-records-internal-sub-sub-content">
+                                                        Dec 5,2023
+                                                    </div>
+                                                </div>
+
+                                                <div class="search-records-img-content-sub mb-2">
+                                                    <img src="images/clock.svg" alt="" srcset="">
+                                                    <div class="search-records-internal-sub-content">
+                                                        Email:
+                                                    </div>
+                                                    <div class="search-records-internal-sub-sub-content">
+                                                        manali.bhalodia@tatvamail.com
+                                                    </div>
+                                                </div>
+
+                                                <div class="search-records-img-content-sub mb-2">
+                                                    <img src="images/clock.svg" alt="" srcset="">
+                                                    <div class="search-records-internal-sub-content">
+                                                        Phone:
+                                                    </div>
+                                                    <div class="search-records-internal-sub-sub-content">
+                                                        (123) 456-789111
+                                                    </div>
+                                                </div>
+
+                                                <div class="search-records-img-content-sub mb-2">
+                                                    <img src="images/clock.svg" alt="" srcset="">
+                                                    <div class="search-records-internal-sub-content">
+                                                        Address:
+                                                    </div>
+                                                    <div class="search-records-internal-sub-sub-content">
+                                                        dc, dc, dc
+                                                    </div>
+                                                </div>
+
+                                                <div class="search-records-img-content-sub mb-2">
+                                                    <img src="images/clock.svg" alt="" srcset="">
+                                                    <div class="search-records-internal-sub-content">
+                                                        ZipCode:
+                                                    </div>
+                                                    <div class="search-records-internal-sub-sub-content">
+                                                        20001
+                                                    </div>
+                                                </div>
+
+                                                <div class="search-records-img-content-sub mb-2">
+                                                    <img src="images/clock.svg" alt="" srcset="">
+                                                    <div class="search-records-internal-sub-content">
+                                                        Request Status:
+                                                    </div>
+                                                    <div class="search-records-internal-sub-sub-content">
+                                                        Unpaid Request
+                                                    </div>
+                                                </div>
+
+                                                <div class="search-records-img-content-sub mb-2">
+                                                    <img src="images/clock.svg" alt="" srcset="">
+                                                    <div class="search-records-internal-sub-content">
+                                                        Provider:
+                                                    </div>
+                                                    <div class="search-records-internal-sub-sub-content">
+                                                        -
+                                                    </div>
+                                                </div>
+                                                <div class="search-records-img-content-sub mb-2">
+                                                    <img src="images/clock.svg" alt="" srcset="">
+                                                    <div class="search-records-internal-sub-content">
+                                                        Provider Note:
+                                                    </div>
+                                                    <div class="search-records-internal-sub-sub-content">
+                                                        -
+                                                    </div>
+                                                </div>
+                                                <div class="search-records-img-content-sub mb-2">
+                                                    <img src="images/clock.svg" alt="" srcset="">
+                                                    <div class="search-records-internal-sub-content">
+                                                        Cancelled By Provider Note:
+                                                    </div>
+                                                    <div class="search-records-internal-sub-sub-content">
+                                                        test
+                                                    </div>
+                                                </div>
+                                                <div class="search-records-img-content-sub mb-2">
+                                                    <img src="images/clock.svg" alt="" srcset="">
+                                                    <div class="search-records-internal-sub-content">
+                                                        Admin Note:
+                                                    </div>
+                                                    <div class="search-records-internal-sub-sub-content">
+                                                        -
+                                                    </div>
+                                                </div>
+                                                <div class="search-records-img-content-sub mb-2">
+                                                    <img src="images/clock.svg" alt="" srcset="">
+                                                    <div class="search-records-internal-sub-content">
+                                                        Cancellation Reason:
+                                                    </div>
+                                                    <div class="search-records-internal-sub-sub-content">
+                                                        Insurance Issue
+                                                    </div>
+                                                </div>
+                                                <div class="search-records-img-content-sub mb-2">
+                                                    <img src="images/clock.svg" alt="" srcset="">
+                                                    <div class="search-records-internal-sub-content">
+                                                        Patient Note:
+                                                    </div>
+                                                    <div class="search-records-internal-sub-sub-content">
+                                                        -
+                                                    </div>
+                                                </div>
+
+                                                <div class="search-records-delete-edit-sub-menu">
+                                                    <button type="button">Delete Permanently</button>
+                                                    <button type="button">View Case</button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+                                    <div class="container-fluid search-records-detail p-0">
+                                        <div class="search-records-mobile-open search-records-main-detail-padding">
+                                            <div class="search-records-main-internal-component">
+                                                <div class="search-records-checkbox-content">
+                                                    <div class="search-records-main-content-with-checkbox">
+                                                        <input class="form-check-input on-selection-checkox"
+                                                            type="checkbox" value="option1">
+                                                        <div class="search-records-with-checkbox-heading">
+                                                            Reject, Newnew
+                                                        </div>
+                                                    </div>
+                                                    <div class="search-records-main-content">
+                                                        Dc, Dc, Dc
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                        </div>
+
+                                        <div class="search-records-mobile-open-panel container-fluid patient-mobile-dashboard-padding"
+                                            id="admin-new-state-mobile-view-open">
+                                            <div class="search-records-internal-sub-component">
+                                                <div class="search-records-img-content-sub mb-2">
+                                                    <img src="images/clock.svg" alt="" srcset="">
+                                                    <div class="search-records-internal-sub-content">
+                                                        Requestor:
+                                                    </div>
+                                                    <div class="search-records-internal-sub-sub-content">
+                                                        Family/Friend
+                                                    </div>
+                                                </div>
+
+                                                <div class="search-records-img-content-sub mb-2">
+                                                    <img src="images/clock.svg" alt="" srcset="">
+                                                    <div class="search-records-internal-sub-content">
+                                                        Date Of Service:
+                                                    </div>
+                                                    <div class="search-records-internal-sub-sub-content">
+                                                        -
+                                                    </div>
+                                                </div>
+
+                                                <div class="search-records-img-content-sub mb-2">
+                                                    <img src="images/clock.svg" alt="" srcset="">
+                                                    <div class="search-records-internal-sub-content">
+                                                        Case Close Date:
+                                                    </div>
+                                                    <div class="search-records-internal-sub-sub-content">
+                                                        Dec 5,2023
+                                                    </div>
+                                                </div>
+
+                                                <div class="search-records-img-content-sub mb-2">
+                                                    <img src="images/clock.svg" alt="" srcset="">
+                                                    <div class="search-records-internal-sub-content">
+                                                        Email:
+                                                    </div>
+                                                    <div class="search-records-internal-sub-sub-content">
+                                                        manali.bhalodia@tatvamail.com
+                                                    </div>
+                                                </div>
+
+                                                <div class="search-records-img-content-sub mb-2">
+                                                    <img src="images/clock.svg" alt="" srcset="">
+                                                    <div class="search-records-internal-sub-content">
+                                                        Phone:
+                                                    </div>
+                                                    <div class="search-records-internal-sub-sub-content">
+                                                        (123) 456-789111
+                                                    </div>
+                                                </div>
+
+                                                <div class="search-records-img-content-sub mb-2">
+                                                    <img src="images/clock.svg" alt="" srcset="">
+                                                    <div class="search-records-internal-sub-content">
+                                                        Address:
+                                                    </div>
+                                                    <div class="search-records-internal-sub-sub-content">
+                                                        dc, dc, dc
+                                                    </div>
+                                                </div>
+
+                                                <div class="search-records-img-content-sub mb-2">
+                                                    <img src="images/clock.svg" alt="" srcset="">
+                                                    <div class="search-records-internal-sub-content">
+                                                        ZipCode:
+                                                    </div>
+                                                    <div class="search-records-internal-sub-sub-content">
+                                                        20001
+                                                    </div>
+                                                </div>
+
+                                                <div class="search-records-img-content-sub mb-2">
+                                                    <img src="images/clock.svg" alt="" srcset="">
+                                                    <div class="search-records-internal-sub-content">
+                                                        Request Status:
+                                                    </div>
+                                                    <div class="search-records-internal-sub-sub-content">
+                                                        Unpaid Request
+                                                    </div>
+                                                </div>
+
+                                                <div class="search-records-img-content-sub mb-2">
+                                                    <img src="images/clock.svg" alt="" srcset="">
+                                                    <div class="search-records-internal-sub-content">
+                                                        Provider:
+                                                    </div>
+                                                    <div class="search-records-internal-sub-sub-content">
+                                                        -
+                                                    </div>
+                                                </div>
+                                                <div class="search-records-img-content-sub mb-2">
+                                                    <img src="images/clock.svg" alt="" srcset="">
+                                                    <div class="search-records-internal-sub-content">
+                                                        Provider Note:
+                                                    </div>
+                                                    <div class="search-records-internal-sub-sub-content">
+                                                        -
+                                                    </div>
+                                                </div>
+                                                <div class="search-records-img-content-sub mb-2">
+                                                    <img src="images/clock.svg" alt="" srcset="">
+                                                    <div class="search-records-internal-sub-content">
+                                                        Cancelled By Provider Note:
+                                                    </div>
+                                                    <div class="search-records-internal-sub-sub-content">
+                                                        test
+                                                    </div>
+                                                </div>
+                                                <div class="search-records-img-content-sub mb-2">
+                                                    <img src="images/clock.svg" alt="" srcset="">
+                                                    <div class="search-records-internal-sub-content">
+                                                        Admin Note:
+                                                    </div>
+                                                    <div class="search-records-internal-sub-sub-content">
+                                                        -
+                                                    </div>
+                                                </div>
+                                                <div class="search-records-img-content-sub mb-2">
+                                                    <img src="images/clock.svg" alt="" srcset="">
+                                                    <div class="search-records-internal-sub-content">
+                                                        Cancellation Reason:
+                                                    </div>
+                                                    <div class="search-records-internal-sub-sub-content">
+                                                        Insurance Issue
+                                                    </div>
+                                                </div>
+                                                <div class="search-records-img-content-sub mb-2">
+                                                    <img src="images/clock.svg" alt="" srcset="">
+                                                    <div class="search-records-internal-sub-content">
+                                                        Patient Note:
+                                                    </div>
+                                                    <div class="search-records-internal-sub-sub-content">
+                                                        -
+                                                    </div>
+                                                </div>
+
+                                                <div class="search-records-delete-edit-sub-menu">
+                                                    <button type="button">Delete Permanently</button>
+                                                    <button type="button">View Case</button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <footer class="footer">
+                <div class="terms-and-condition-dashboard">
+                    <a href="#">Terms of Condition </a> | <a href="#">Privacy Policy</a>
+                </div>
+            </footer>
+        </div>
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/custom.js"></script>
+        <script src="js/patient_dashboard.js"></script>
+
+        <script>
+            const phoneInputField = document.querySelector("#PatientRequestPhone");
+            const phoneInput = window.intlTelInput(phoneInputField, {
+                utilsScript:
+                    "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+            });
+
+            $(window).on('scroll', function () {
+                positionItiContainer();
+            });
+
+            $('.iti__selected-flag').click(function () {
+                positionItiContainer();
+            });
+
+            var positionItiContainer = function () {
+                if ($('body.iti-mobile').length) {
+                    var phoneElement = document.getElementById('PatientRequestPhone');
+                    var selectedFlag = document.querySelector('.iti__selected-flag');
+                    var phoneRect = phoneElement.getBoundingClientRect();
+                    var selectedFlagRect = selectedFlag.getBoundingClientRect();
+
+                    $('.iti--container').css('top', selectedFlagRect.bottom + 'px');
+                    $('.iti--container').css('left', selectedFlagRect.left + 'px');
+                }
+            };
+
+        </script>
+
+        <script>
+
+            $(document).ready(function () {
+                $('.on-select').css('color', 'gray');
+                $('.on-select').change(function () {
+                    var current = $('.on-select').val();
+                    if (current != 'null') {
+                        $('.on-select').css('color', 'black');
+                    } else {
+                        $('.on-select').css('color', 'gray');
+                    }
+                });
+            });
+
+
+
+        </script>
+
+
+
+</body>
+
+</html>
