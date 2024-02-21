@@ -1,0 +1,421 @@
+.main-container-patient-dashbord{
+    background-color: #f1f1f1;
+}
+
+.patient-dashboard-create-request-actual-button-in-mobile{
+    display: none;
+}
+
+.patient-dashboard-create-request-actual-button-in-mobile img{
+    filter: invert(67%) sepia(44%) saturate(5313%) hue-rotate(152deg) brightness(98%) contrast(99%);
+
+
+}
+
+.patient-dashboard-create-request-actual-button:hover .patient-dashboard-create-request-actual-button-in-mobile img,
+.patient-dashboard-create-request-actual-button:hover .patient-dashboard-create-request-actual-button-in-mobile img{
+    filter: invert(100%) sepia(0%) saturate(7413%) hue-rotate(326deg) brightness(93%) contrast(122%);
+}
+
+.below-nav-content-patient-dashboard{
+    min-height: 100vh;
+}
+
+.patient-dashboard-create-request-actual-button {
+    background-color: #ffffff;
+    color: #00bcee;
+    border: 1px solid #01bce9;
+    border-radius: 0.4rem;
+    padding: 0.5rem 0.8rem;
+
+}
+
+.patient-dashboard-create-request-button {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 1rem 1.3rem;
+}
+
+.patient-dashboard-main-heading {
+    font-size: 1.5rem;
+    font-weight: 650;
+    margin-bottom: 0.6rem;
+}
+
+.main-component-patient-dashboard {
+    padding: 1rem;
+}
+
+.patient-dashboard-table {
+    background-color: #ffffff;
+    border-radius: 0.6rem;
+}
+
+.patient-dashboard-actual-table .table tr th:nth-child(1) {
+    width: 18%;
+}
+
+.patient-dashboard-actual-table .table tr th:nth-child(3) {
+    width: 24%;
+    text-align: center;
+}
+
+.patient-dashboard-actual-table .table tr th:nth-child(4) {
+    width: 16%;
+    text-align: center;
+}
+
+.patient-dashboard-actual-table .table tr td:nth-child(3) {
+    text-align: center;
+}
+
+.patient-dashboard-actual-table .table tr td:nth-child(4) {
+    text-align: center;
+}
+
+.patient-dashbord-first-column{
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.patient-dashboard-actual-table .row-dashboard-actual-table thead tr th {
+    background-color: #e3e3e3;
+    vertical-align: middle;
+    font-size: 1rem;
+    padding: 0.8rem 0.5rem;
+    font-weight: 600;
+}
+.patient-dashboard-provider-admin-button button{
+    background-color: #ffffff;
+    color: #00bcee;
+    border: 1px solid #01bce9;
+    border-radius: 0.4rem;
+    padding: 0.3rem 0.5rem;
+}
+
+.patient-dashboard-provider-admin-button button span{
+    color: #00bcee;
+    font-weight: 500;
+}
+
+
+.patient-dashboard-provider-admin-button button img{
+    vertical-align: middle;
+    filter: invert(67%) sepia(44%) saturate(5313%) hue-rotate(152deg) brightness(98%) contrast(99%);
+
+
+}
+
+.patient-dashboard-patient-field td {
+    background-color: #ffffff;
+    color: #838383;
+    vertical-align: middle;
+}
+
+
+.patient-dashboard-provider-admin-button a{
+    background-color: #ffffff;
+    color: #00bcee;
+    border: 1px solid #01bce9;
+    border-radius: 0.4rem;
+    padding: 0.3rem 0.5rem;
+    text-decoration: none;
+}
+
+.patient-dashboard-provider-admin-button a span{
+    color: #00bcee;
+    font-weight: 500;
+}
+
+
+.patient-dashboard-provider-admin-button a svg{
+    vertical-align: middle;
+}
+
+.patient-dashboard-patient-field td {
+    background-color: #ffffff;
+    color: #838383;
+    vertical-align: middle;
+}
+
+
+
+.patient-dashbord-detail {
+    position: relative;
+    background-color: #EBFAFD;
+    border-top: 1px solid #898989;
+    border-bottom: 1px solid #898989;
+}
+
+.patient-dashbord-main-detail-padding {
+    padding-top: 1rem;
+}
+
+.patient-dashboard-component-detail {
+    display: flex;
+    align-items: center;
+    padding: 0rem 1rem;
+    gap: 0.4rem;
+}
+
+.patient-dashboard-component-main-content{
+    font-weight: 600;
+    color: black;
+}
+.patient-dashboard-component-sub-content{
+    color: grey;
+}
+
+.patient-dashboard-component-img{
+    width: 14px;
+    height: 14px;
+}
+
+.patient-dashboard-sub-component-detail {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-bottom: 0.6rem;
+    font-size: 1rem;
+}
+
+.patient-dashboard-sub-component-img {
+    border: 2px solid #00bcee;
+    padding: 0rem 0.3rem;
+    padding-bottom: 0.2rem;
+    border-radius: 50%;
+}
+
+.admin-new-state-patient-detail-mobile-view-img img {
+    width: 12px;
+    height: 12px;
+}
+.patient-dashboard-sub-component-detail .patient-dashboard-provider-admin-button{
+    width: 100%;
+}
+.patient-dashboard-sub-component-detail .patient-dashboard-provider-admin-button a{
+    background: transparent;
+    color: #00bcee;
+    border: 1px solid #01bce9;
+    border-radius: 0.4rem;
+    padding: 0.3rem 0.5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+    
+}
+
+.patient-dashboard-sub-component-detail .patient-dashboard-provider-admin-button a span{
+    color: #00bcee;
+    font-weight: 500;
+}
+
+
+.patient-dashboard-sub-component-detail .patient-dashboard-provider-admin-button a{
+    background: transparent;
+    color: #00bcee;
+    border: 1px solid #01bce9;
+    border-radius: 0.4rem;
+    padding: 0.3rem 0.5rem;
+    width: 100%;
+    text-decoration: none;
+    
+}
+
+.patient-dashboard-sub-component-detail .patient-dashboard-provider-admin-button a span{
+    color: #00bcee;
+    font-weight: 500;
+}
+
+.patient-mobile-dashboard-padding {
+    padding: 1rem 1rem;
+    background-color: #EBFAFD;
+    display: none;
+}
+
+
+.dashboard-modal-body-button{
+    border: 1px solid #01bce9;
+    border-radius: 0.4rem;
+    padding: 0.5rem 0.8rem;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.dashboard-modal-body-button-me{
+    background-color: #03b8e7;
+    color: #ffffff;
+}
+
+.dashboard-modal-body-button-someOneElse{
+    background-color: #ffffff;
+    color: #03b8e7;
+}
+
+.dashboard-modal-combination-body-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+}
+
+.project-modal-cutomize .modal-header{
+    background-color: #03b8e7;
+    color: white;
+}
+
+.project-modal-cutomize .modal-footer{
+    border: none;
+}
+
+.project-modal-cutomize .modal-body{
+    padding-bottom: 0rem;
+}
+
+.dashboard-modal-combination-body-text{
+    font-weight: 500;
+    padding-bottom: 1rem;
+    font-size: 1.1rem;
+    color: #616060;
+}
+
+.project-modal-cutomize .modal-header .btn-close{
+   background: url('../images/close.svg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+}
+
+.dashboard-modal-footer-conform-button{
+    background-color: #03b8e7;
+    border: 1px solid #03b8e7;
+    border-radius: 0.4rem;
+    padding: 0.5rem 0.8rem;
+    font-size: 1.1rem;
+    color: #ffffff;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.dashboard-modal-footer-conform-button:hover,
+.dashboard-modal-footer-conform-button:active{
+    background-color: #00a7cf;
+    border: 1px solid #00a7cf;
+}
+
+.dashboard-modal-footer-cancle-button{
+    background-color: #ffffff;
+    color: #00bcee;
+    border: 1px solid #01bce9;
+    border-radius: 0.4rem;
+    padding: 0.5rem 0.8rem;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.dashboard-modal-footer-cancle-button:hover,
+.dashboard-modal-footer-cancle-button:active{
+    background-color: #01bce9;
+    color: #ffffff;
+    border: 1px solid #01bce9;
+}
+
+.dashboard-modal-footer-cancle-button{
+    background-color: #ffffff;
+    color: #00bcee;
+    border: 1px solid #01bce9;
+    border-radius: 0.4rem;
+    padding: 0.5rem 0.8rem;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.patient-dashboard-modal-body-button{
+    background-color: transparent;
+    color: #01bce9;
+}
+
+
+.patient-dashboard-modal-body-button-active{
+    background-color: #01bce9;
+    color: #ffffff;
+}
+
+.patient-dashboard-create-request-button button:hover,
+.patient-dashboard-create-request-button button:active{
+    background-color: #01bce9;
+    color: #ffffff;
+}
+
+.patient-dashboard-provider-admin-button button:hover,
+.patient-dashboard-provider-admin-button button:active{
+    background-color: #01bce9;
+    color: #ffffff;
+}
+
+.patient-dashboard-provider-admin-button button:hover span,
+.patient-dashboard-provider-admin-button button:active span{
+    background-color: #01bce9;
+    color: #ffffff;
+}
+
+
+.patient-dashboard-provider-admin-button button:hover img,
+.patient-dashboard-provider-admin-button button:active img{
+    filter: invert(100%) sepia(0%) saturate(7413%) hue-rotate(326deg) brightness(93%) contrast(122%);
+}
+
+
+.patient-dashboard-provider-admin-button a:hover,
+.patient-dashboard-provider-admin-button a:active{
+    background-color: #01bce9;
+    color: #ffffff;
+}
+
+.patient-dashboard-provider-admin-button a:hover span,
+.patient-dashboard-provider-admin-button a:active span{
+    background-color: #01bce9;
+    color: #ffffff;
+}
+
+.patient-dashboard-provider-admin-button a:hover svg,
+.patient-dashboard-provider-admin-button a:active svg{
+    background-color: #01bce9;
+    color: #ffffff;
+}
+
+.patient-dashboard-provider-admin-button a svg,
+.patient-dashboard-provider-admin-button a svg{
+    color: #01bce9;
+}
+
+
+
+@media (max-width:991px) {
+    .patient-dashboard-actual-table .table tr th:nth-child(1) {
+        width: 20%;
+    }
+    
+    .patient-dashboard-actual-table .table tr th:nth-child(3) {
+        width: 32%;
+        text-align: center;
+    }
+    
+    .patient-dashboard-actual-table .table tr th:nth-child(4) {
+        width: 20%;
+        text-align: center;
+    }
+}
+
+@media (max-width:767px) {
+    .patient-dashboard-create-request-actual-button-in-mobile{
+        display: block;
+    }
+    .patient-dashboard-create-request-actual-button-in-desktop{
+        display: none;
+    }
+}

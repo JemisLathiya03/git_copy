@@ -1,0 +1,407 @@
+.below-nav-content-admin-dashboard {
+    min-height: 50vh;
+}
+
+.main-component-below-padding {
+    padding-bottom: 3rem;
+}
+
+.view-upload-document-main-component{
+    width: 70%;
+    margin: auto;
+}
+
+.view-upload-document-heading-and-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.7rem;
+}
+.view-upload-document-buttons{
+    display: flex;
+    gap: 0.4rem;
+}
+
+.view-upload-document-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+    color: #01bce9;
+    border: 1px solid #01bce9;
+    border-radius: 0.4rem;
+    padding: 0.5rem 0.8rem;
+    background: transparent;
+    cursor: pointer;
+
+}
+
+.view-upload-document-button a {
+    display: flex;
+    text-decoration: none;
+    color: #01bce9;
+}
+
+.view-upload-document-button a:active {
+    color: #ffffff;
+    background-color: #01bce9;
+}
+
+.view-upload-document-button svg {
+    color: #01bce9;
+}
+
+.view-upload-document-heading {
+    font-size: 1.5rem;
+    font-weight: 600;
+
+}
+
+.view-upload-document-below-main-component {
+    border-radius: 1rem;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 6px grey;
+}
+
+.view-upload-sub-heading-upload-button {
+    padding: 1.1rem;
+}
+
+.view-upload-first-sub-heading {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #8e8e8e;
+}
+
+.view-upload-second-sub-heading {
+    display: flex;
+    gap: 0.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.view-upload-actual-name {
+    display: flex;
+    align-items: end;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #00adef;
+}
+
+.view-upload-actual-name-after {
+    display: flex;
+    align-items: end;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #8e8e8e;
+}
+
+
+.view-upload-document-action-button button{
+    background-color: #ffffff;
+    color: #00bcee;
+    border: 1px solid #01bce9;
+    border-radius: 0.4rem;
+    padding: 0.3rem 0.5rem;
+}
+
+.view-upload-document-action-button button img{
+    width: 18px;
+    height: 18px;
+}
+
+.view-upload-document-paragraph-type-content {
+    margin-bottom: 1rem;
+    color: #8e8e8e;
+    font-weight: 500;
+}
+
+.view-upload-document-sub-heading-and-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.7rem;
+}
+
+.view-upload-document-sub-heading-and-button .view-upload-document-heading {
+    font-size: 1.3rem;
+    font-weight: 600;
+
+}
+
+.patient-dashbord-first-column {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+
+.view-upload-document-table .table tr th:nth-child(1) {
+    width: 6%;
+    text-align: center;
+}
+
+.view-upload-document-table .table tr td:nth-child(1) {
+    text-align: center;
+}
+
+.view-upload-document-table .table tr th:nth-child(3) {
+    width: 14%;
+}
+
+.view-upload-document-table .table tr th:nth-child(4) {
+    width: 18%;
+}
+
+.view-upload-document-table .table tr th:nth-child(5) {
+    width: 10%;
+    text-align: center;
+}
+
+.view-upload-document-table .table tr td:nth-child(5) {
+    text-align: center;
+}
+
+.view-upload-document-table .row-dashboard-actual-table tbody {
+    border: none;
+}
+.view-upload-document-pdf-image-content-format{
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+.view-upload-document-pdf-image-content-format img{
+    width: 20px;
+    height: 20px;
+}
+.view-upload-document-table .row-dashboard-actual-table tbody tr td {
+    border: none;
+    border-top: 1px solid #cdcdcd ;
+}
+
+.view-upload-document-table .row-dashboard-actual-table thead tr th {
+    background-color: #e3e3e3;
+    vertical-align: middle;
+    font-size: 1rem;
+    padding: 0.8rem 0.5rem;
+    font-weight: 600;
+}
+
+.view-upload-document-table input[type="checkbox" i] {
+    background-color: #00adef;
+    cursor: pointer;
+    appearance: auto;
+    width: 17px;
+    height: 17px;
+    box-sizing: border-box;
+    margin: 3px 3px 3px 4px;
+    padding: initial;
+    border: 1px solid #00adef;
+}
+
+.download-all-button-icon{
+    display: none;
+}
+
+.view-upload-document-patient-field .dashboard-table-button img{
+    width: 18px;
+    height: 18px;
+}
+
+
+.view-upload-document-patient-field td {
+    background-color: #ffffff;
+    color: #838383;
+    vertical-align: middle;
+}
+
+.view-upload-document-mobile-checkbox-pdf{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.2rem;
+}
+
+.view-upload-document-mobile-checkbox-pdf img{
+    width: 20px;
+    height: 20px;
+}
+
+.view-upload-document-card{
+    padding: 1rem;
+    border-top: 1px solid #8e8e8e;
+}
+
+.view-upload-document-card input[type="checkbox" i] {
+    background-color: #00adef;
+    cursor: pointer;
+    appearance: auto;
+    width: 17px;
+    height: 17px;
+    box-sizing: border-box;
+    margin: 3px 3px 3px 4px;
+    padding: initial;
+    border: 1px solid #00adef;
+}
+
+
+.view-upload-document-mobile-action-button img{
+    width: 18px;
+    height: 18px;
+}
+
+.view-upload-document-mobile-action-button button {
+    background-color: #ffffff;
+    color: #00bcee;
+    border: 1px solid #01bce9;
+    border-radius: 0.4rem;
+    padding: 0.3rem 0.5rem;
+}
+
+.view-upload-document-mobile-uploader-name{
+    margin-bottom: 0.3rem;
+}
+
+.view-upload-document-mobile-uploader-date{
+    margin-bottom: 0.6rem;
+}
+.view-upload-document-mobile-action-button{
+    margin-bottom: 0.4rem;
+}
+
+.view-upload-document-mobile{
+    display: none;
+}
+
+.view-upload-document-action-button{
+    display: flex;
+    gap: 0.3rem;
+}
+
+@media (max-width:1100px) {
+    .view-upload-document-main-component {
+        width: 80%;
+    }
+}
+
+@media (max-width:960px) {
+    .view-upload-document-main-component {
+        width: 85%;
+    }
+}
+
+@media (max-width:910px) {
+    .view-upload-document-table .table tr th:nth-child(3) {
+        width: 18%;
+    }
+
+    .view-upload-document-table .table tr th:nth-child(4) {
+        width: 22%;
+    }
+
+    .view-upload-document-table .table tr th:nth-child(5) {
+        width: 12%;
+    }
+}
+
+@media (max-width:767px) {
+
+    
+    .below-nav-content-admin {
+        margin: 1rem;
+    }
+    .view-upload-document-mobile{
+        display: block;
+    }
+    .below-nav-content-patient-document {
+        margin: 1rem;
+    }
+    .view-upload-document-main-component {
+        width: 100%;
+    }
+
+    .main-component-admin-dashboard {
+        padding: 0.5rem;
+    }
+
+    .patient-dashboard-create-request-actual-button-in-mobile {
+        display: block;
+    }
+
+    .patient-dashboard-create-request-actual-button-in-desktop {
+        display: none;
+    }
+    .download-all-button-content{
+        display: none;
+    }
+    .download-all-button-icon{
+        display: block;
+    }
+
+    .download-all-button-icon img{
+        width: 18px;
+        height: 18px;
+    }
+}
+
+@media (max-width:500px) {
+
+    
+    .below-nav-content-admin {
+        margin: 0.8rem;
+    }
+    .main-component-admin-dashboard {
+        padding: 0rem;
+    }
+
+    .below-nav-content-patient-document {
+        margin: 0.8rem;
+    }
+
+    .view-upload-document-heading {
+        font-size: 1.25rem;
+    }
+
+    .view-upload-first-sub-heading {
+        font-size: 0.7rem;
+    }
+
+    .view-upload-actual-name {
+        font-size: 1.1rem;
+    }
+
+    .view-upload-actual-name-after {
+        font-size: 0.8rem;
+    }
+
+    .view-upload-document-paragraph-type-content {
+        font-size: 0.85rem;
+    }
+
+    .plateform-input-form {
+        font-size: 0.9rem;
+        height: 41px;
+        padding: 0.5rem 0.75em;
+    }
+
+    .plateform-input-form-upload-label {
+        height: 41px;
+        width: 52px;
+    }
+
+
+    .plateform-input-form-upload-label span {
+        display: none;
+    }
+    .view-upload-document-sub-heading-and-button .view-upload-document-heading {
+        font-size: 1.1rem;
+    }
+
+    .view-upload-document-main-component .plateform-input-margin {
+        margin-bottom: 0.5rem;
+    }
+
+    .view-upload-document-button {
+        padding: 0.3rem 0.5rem;
+    }
+
+}

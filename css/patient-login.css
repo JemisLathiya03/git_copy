@@ -1,0 +1,65 @@
+body{
+    background-color: #fbfbfb;
+}
+
+.patient-login .dark-mode-btn-patient {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1;
+    background: transparent;
+}
+
+
+.patient-login .patient-img {
+    margin-top: 4rem;
+    margin-bottom: 6rem;
+}
+
+
+.patient-login .plateform-input-form{
+    padding-right: 3.2rem;
+}
+
+.patient-login .patient-main-component::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    background: url(../images/7768657_3763028.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.2;
+    z-index: -1;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+}
+
+.patient-login-back-button{
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+    color: #01bce9;
+    text-decoration: none;
+}
+.patient-login-back-button .patient-login-back-button-icon img{
+width: 22px;
+height: 22px;
+filter: invert(67%) sepia(44%) saturate(5313%) hue-rotate(152deg) brightness(98%) contrast(99%);
+}
+
+.patient-login-back-button .patient-login-back-button-content{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.patient-login .plateform-login-form h3 {
+    font-size: 2.5rem;
+    padding: 2rem 1rem;
+    padding-top: 0.5rem;
+}
+

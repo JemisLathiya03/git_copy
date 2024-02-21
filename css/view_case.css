@@ -1,0 +1,302 @@
+.below-nav-content-admin-dashboard {
+    min-height: 100vh;
+}
+
+.main-component-below-padding {
+    padding-bottom: 3rem;
+}
+
+.admin-all-main-component {
+    width: 70%;
+    margin: auto;
+}
+
+.main-component-admin-dashboard {
+    padding: 1rem;
+}
+
+.admin-all-heading-and-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.7rem;
+}
+
+.admin-document-heading {
+    font-size: 1.5rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+}
+
+.admin-back-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+    color: #01bce9;
+    border: 2px solid #01bce9;
+    border-radius: 0.4rem;
+    padding: 0.5rem 0.8rem;
+    background: transparent;
+    cursor: pointer;
+
+}
+
+.admin-back-button a {
+    display: flex;
+    text-decoration: none;
+    color: #01bce9;
+}
+
+.admin-back-button a:active {
+    color: #ffffff;
+    background-color: #01bce9;
+}
+
+.admin-back-button svg {
+    color: #01bce9;
+}
+
+.admin-below-all-main-component {
+    border-radius: 1rem;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 6px grey;
+}
+
+.view-case-sub-heading {
+    padding: 1.1rem;
+}
+
+.admin-first-sub-heading {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #8e8e8e;
+}
+
+.admin-document-heading-after{
+    border: 1px solid;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.6rem;
+    color: #ffffff;
+    border-radius: 0.7rem;
+}
+
+.admin-document-heading-patient{
+    border-color: #60be5e;
+    background-color: #60be5e;
+}
+
+.admin-document-heading-family {
+    border-color: #d69b4b;
+    background-color: #d69b4b;
+}
+
+.admin-document-heading-business {
+    border-color: #e0657a;
+    background-color: #e0657a;
+}
+
+.admin-document-heading-concierge {
+    border-color: #097dba;
+    background-color: #097dba;
+}
+
+.admin-document-heading-vip {
+    border-color: #7a468e;
+    background-color: #7a468e;
+}
+
+.view-case-first-sub-heading{
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.6rem;
+}
+
+
+.view-case-second-sub-heading {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+}
+
+.view-case-actual-name{
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #9f9f9f;
+}
+
+.view-case-actual-name-after{
+    font-size: 1rem;
+    font-weight: 600;
+    color: #00adef;
+}
+
+.view-case-first-textarea{
+    border-bottom: 2px dashed #9f9f9f;
+}
+
+.bootstrap-form-customize{
+    padding: 0rem 1rem;
+}
+
+.view-case-form-call-button-icon{
+    width: 20px;
+    height: 20px;
+}
+
+.view-case-form-call-button{
+    border: 2px solid #01bce9;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background: transparent;
+    height: 52px;
+
+}
+
+.view-case-form-edit-button{
+    border: 2px solid #01bce9;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background: transparent;
+    height: 52px;
+    width: 5rem;
+
+}
+.view-case-form-edit-button-content{
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #01bce9;
+}
+
+
+.view-case-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 0.4rem;
+}
+
+.view-case-assign-button{
+    background-color: #01bce9;
+    border: 1px solid #01bce9;
+    border-radius: 0.4rem;
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+    color: #ffffff;
+    font-weight: 400;
+    display: none;
+}
+
+.view-case-view-notes-button{
+    background-color: #01bce9;
+    border: 1px solid #01bce9;
+    border-radius: 0.4rem;
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+    color: #ffffff;
+    font-weight: 400;
+}
+
+.view-case-cancel-button{
+    background-color: #db0202;
+    border: 1px solid #db0202;
+    border-radius: 0.4rem;
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+    color: #ffffff;
+    font-weight: 400;
+}
+
+
+@media (max-width:1100px) {
+    .admin-all-main-component {
+        width: 80%;
+    }
+}
+
+@media (max-width:960px) {
+    .admin-all-main-component {
+        width: 85%;
+    }
+}
+
+
+@media (max-width:767px) {
+
+    .below-nav-content-admin {
+        margin: 1rem;
+    }
+
+    .main-component-admin-dashboard {
+        padding: 0.5rem;
+    }
+
+    .admin-all-main-component {
+        width: 100%;
+    }
+
+    .view-case-assign-button{
+        display: block;
+    }
+    .view-case-form-edit-button-main{
+        display: none;
+    }
+}
+
+@media (max-width:500px) {
+
+    .below-nav-content-admin {
+        margin: 0.8rem;
+    }
+
+
+    .main-component-admin-dashboard {
+        padding: 0rem;
+    }
+
+
+
+    .admin-all-main-component .plateform-input-margin {
+        margin-bottom: 0.5rem;
+    }
+
+
+    .admin-document-heading {
+        font-size: 1.25rem;
+    }
+
+    .admin-back-button {
+        padding: 0.3rem 0.5rem;
+    }
+
+    .admin-first-sub-heading {
+        font-size: 0.7rem;
+    }
+
+    .view-case-assign-button{
+        border-radius: 0.3rem;
+        padding: 0.4rem 0.8rem;
+        font-size: 0.8rem;
+    }
+    
+    .view-case-view-notes-button{
+        border-radius: 0.3rem;
+        padding: 0.4rem 0.8rem;
+        font-size: 0.8rem;
+    }
+    
+    .view-case-cancel-button{
+        border-radius: 0.3rem;
+        padding: 0.4rem 0.8rem;
+        font-size: 0.8rem;
+    }
+}

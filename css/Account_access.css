@@ -1,0 +1,260 @@
+.below-nav-content-admin-dashboard {
+    min-height: 50vh;
+}
+
+.main-component-below-padding {
+    padding-bottom: 3rem;
+}
+
+.admin-all-main-component {
+    width: 70%;
+    margin: auto;
+}
+
+.main-component-admin-dashboard {
+    padding: 1rem;
+}
+
+.admin-all-heading-and-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.7rem;
+}
+
+.admin-document-heading {
+    font-size: 1.5rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+}
+
+.admin-back-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+    color: #01bce9;
+    border: 2px solid #01bce9;
+    border-radius: 0.4rem;
+    padding: 0.5rem 0.8rem;
+    background: transparent;
+    cursor: pointer;
+
+}
+
+.admin-back-button a {
+    display: flex;
+    text-decoration: none;
+    color: #01bce9;
+}
+
+.admin-back-button a:active {
+    color: #ffffff;
+    background-color: #01bce9;
+}
+
+.admin-back-button svg {
+    color: #01bce9;
+}
+
+.admin-below-all-main-component {
+    border-radius: 1rem;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 6px grey;
+}
+
+.account-access-search{
+    width: 15rem;
+    position: relative;
+}
+.account-access-create-main-button{
+    padding: 1rem;
+}
+
+.search-menu-icon{
+    position: absolute;
+    top: 0.5rem;
+    left: 0.6rem;
+}
+
+.account-access-create-button button{
+    display: flex;
+    align-items: center;
+    background: transparent;
+    border: 1px solid #01bce9;
+    color: #01bce9;
+    padding: 0.6rem 0.8rem;
+    border-radius: 0.4rem;
+}
+
+.account-access-create-button button img{
+    display: none;
+}
+
+.account-access-create-main-button{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.account-access-document-table .table tr th:nth-child(1) {
+    width: 43%;
+}
+.account-access-document-table .table tr th:nth-child(2) {
+    width: 43%;
+}
+
+.account-access-document-table .table tr th:nth-child(3) {
+    width: 14%;
+    text-align: center;
+}
+
+.account-access-document-table .table tr td:nth-child(3) {
+    text-align: center;
+}
+
+.account-access-document-table .row-dashboard-actual-table tbody {
+    border: none;
+}
+
+.account-access-document-table .row-dashboard-actual-table tbody tr td {
+    border: none;
+    border-top: 1px solid #cdcdcd ;
+}
+
+
+.account-access-document-patient-field .dashboard-table-button img{
+    width: 18px;
+    height: 18px;
+}
+
+
+.account-access-document-patient-field td {
+    background-color: #ffffff;
+    color: #838383;
+    vertical-align: middle;
+}
+
+.account-access-document-table .row-dashboard-actual-table thead tr th {
+    background-color: #e3e3e3;
+    vertical-align: middle;
+    font-size: 1rem;
+    padding: 0.8rem 0.5rem;
+    font-weight: 600;
+}
+
+.account-access-document-table .form-check-input {
+    height: 20px;
+    width: 20px;
+}
+
+.account-access-document-action-button button{
+       background: transparent;
+        border: 1px solid #01bce9;
+        color: #01bce9;
+        padding: 0.6rem 0.8rem;
+        border-radius: 0.4rem;
+}
+.account-access-document-action-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+
+
+.view-upload-document-mobile{
+    display: none;
+}
+
+.view-upload-document-card{
+    padding: 1rem;
+    border-top: 1px solid #8e8e8e;
+}
+
+.account-access-main-sub-content{
+    display: flex;
+    gap: 0.4rem;
+    color: #7b7b7b;
+}
+
+.account-access-document-action-mobile-button button{
+    background: transparent;
+    border: 1px solid #01bce9;
+    color: #01bce9;
+    padding: 0.3rem 0.7rem;
+    border-radius: 0.4rem;
+}
+
+@media (max-width:1100px) {
+    .admin-all-main-component {
+        width: 80%;
+    }
+}
+
+@media (max-width:960px) {
+    .admin-all-main-component {
+        width: 90%;
+    }
+    .account-access-document-table .table tr th:nth-child(1) {
+        width: 42%;
+    }
+    .account-access-document-table .table tr th:nth-child(2) {
+        width: 42%;
+    }
+    .account-access-document-table .table tr th:nth-child(3) {
+        width: 16%;
+    }
+}
+
+@media (max-width:767px) {
+    .admin-all-main-component {
+        width: 100%;
+    }
+    
+    .below-nav-content-admin {
+        margin: 1rem;
+    }
+    .below-nav-content-patient-document {
+        margin: 1rem;
+    }
+
+    .main-component-admin-dashboard {
+        padding: 0.5rem;
+    }
+
+    .view-upload-document-mobile{
+        display: block;
+    }
+
+    .account-access-create-button button img{
+        display: block;
+    }
+
+    .account-access-create-button button span{
+        display: none;
+    }
+
+
+    
+}
+
+@media (max-width:500px) {
+
+    
+    .below-nav-content-admin {
+        margin: 0.8rem;
+    }
+    .main-component-admin-dashboard {
+        padding: 0rem;
+    }
+
+    .below-nav-content-patient-document {
+        margin: 0.8rem;
+    }
+
+}

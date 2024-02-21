@@ -1,0 +1,148 @@
+.main-request-form-patient-profile .main-request-form-content {
+    margin-top: 1rem;
+}
+
+.main-request-form-patient-profile .patient-dashboard-main-heading{
+    margin-bottom: 0rem;
+}
+
+.patient-profile-heading-with-button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.patient-profile-back-button{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+    color: #01bce9;
+    border: 2px solid #01bce9;
+    border-radius: 0.4rem;
+    padding: 0.6rem 0.8rem;
+    background: transparent;
+    cursor: pointer;
+
+}
+
+.patient-profile-back-button a {
+    display: flex;
+    text-decoration: none;
+    color: #01bce9;
+}
+
+.patient-profile-back-button:hover,
+.patient-profile-back-button:active{
+    color: #ffffff;
+    background-color: #01bce9;
+}
+
+.patient-profile-back-button:hover .back-button-content,
+.patient-profile-back-button:active .back-button-content{
+    color: #ffffff;
+}
+
+.patient-profile-back-button:hover .back-button-icon img,
+.patient-profile-back-button:active .back-button-icon img{
+    filter: invert(100%) sepia(0%) saturate(7413%) hue-rotate(326deg) brightness(93%) contrast(122%);
+}
+
+.patient-profile-back-button img {
+    filter: invert(67%) sepia(44%) saturate(5313%) hue-rotate(152deg) brightness(98%) contrast(99%);
+}
+
+.patient-profile-back-button:hover .download-all-button-content,
+.patient-profile-back-button:active .download-all-button-content{
+    color: #ffffff;
+}
+
+
+.form-Edit-button{
+    color: #ffffff;
+    border: 2px solid #01bce9;
+    border-radius: 0.4rem;
+    padding: 0.5rem 1.2rem;
+    background-color: #01bce9;
+}
+
+.patient-form-map-button:hover,
+.patient-form-map-button:active{
+    background-color: #01bce9;
+}
+
+.patient-form-map-button:hover .patient-form-map-button-content,
+.patient-form-map-button:active .patient-form-map-button-content{
+    color: #ffffff;
+}
+
+.patient-form-map-button:hover img,
+.patient-form-map-button:active img{
+    filter: invert(100%) sepia(0%) saturate(7413%) hue-rotate(326deg) brightness(93%) contrast(122%);
+}
+
+.patient-form-map-button img{
+    filter: invert(67%) sepia(44%) saturate(5313%) hue-rotate(152deg) brightness(98%) contrast(99%);
+}
+
+.form-submission-button {
+    color: #ffffff;
+    border: 2px solid #01bce9;
+    border-radius: 0.4rem;
+    padding: 0.5rem 0.8rem;
+    background-color: #01bce9;
+}
+
+.form-cancelation-button {
+    color: #01bce9;
+    border: 2px solid #01bce9;
+    border-radius: 0.4rem;
+    padding: 0.5rem 0.8rem;
+    background: transparent;
+    text-decoration: none;
+}
+
+.form-submission-button:hover,
+.form-submission-button:active{
+    background-color: #00a7cf;
+    border: 2px solid #00a7cf;
+}
+
+.form-Edit-button:hover,
+.form-Edit-button:hover{
+    background-color: #00a7cf;
+    border: 2px solid #00a7cf;
+}
+
+.form-cancelation-button:hover,
+.form-cancelation-button:active{
+    color: #ffffff;
+    border: 2px solid #01bce9;
+    background-color: #01bce9;
+}
+
+.patient-dashboard-main-heading{
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.patient-profile-floating-select-customize>.form-select {
+    border: 1px solid #c2c2c2;
+    --bs-form-select-bg-img: url(../images/down-arrow-dropdown.svg);
+    padding-top: 1.2rem !important;
+    padding-bottom: 0.45rem !important;
+    min-height: 52px;
+    height: 52px;
+}
+
+.patient-profile-floating-select-customize>.form-select:focus~label {
+    color: #01bce9;
+    transition: transform 0.2s ease-in-out;
+}
+
+.patient-profile-floating-select-customize .form-control:focus {
+    border-color: #01bce9;
+    outline: 0;
+    box-shadow: none;
+}

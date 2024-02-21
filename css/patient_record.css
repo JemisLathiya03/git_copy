@@ -1,0 +1,414 @@
+.below-nav-content-admin-dashboard {
+    min-height: 50vh;
+}
+
+.main-component-below-padding {
+    padding-bottom: 3rem;
+}
+
+.admin-all-main-component {
+    width: 98%;
+    margin: auto;
+}
+
+.main-component-admin-dashboard {
+    padding: 1rem;
+}
+
+.admin-all-heading-and-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.7rem;
+}
+
+.admin-document-heading {
+    font-size: 1.5rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+}
+
+.admin-back-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+    color: #01bce9;
+    border: 2px solid #01bce9;
+    border-radius: 0.4rem;
+    padding: 0.5rem 0.8rem;
+    background: transparent;
+    cursor: pointer;
+
+}
+
+.admin-back-button a {
+    display: flex;
+    text-decoration: none;
+    color: #01bce9;
+}
+
+.admin-back-button a:active {
+    color: #ffffff;
+    background-color: #01bce9;
+}
+
+.admin-back-button svg {
+    color: #01bce9;
+}
+
+.admin-below-all-main-component {
+    border-radius: 1rem;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 6px grey;
+    padding-top: 2rem;
+}
+
+.patient-records-document-action-button .dropdown-toggle::after {
+    content: none;
+}
+
+.patient-records-document-action-button .dropdown-toggle {
+    background: transparent;
+    border: 1px solid #01bce9;
+    color: #01bce9;
+    padding: 0.6rem 0.8rem;
+    border-radius: 0.4rem;
+    font-size: 1rem;
+}
+
+.patient-records-document-action-button .dropdown-toggle:hover,
+.patient-records-document-action-button .dropdown-toggle:focus {
+    color: #ffffff;
+    border: 1px solid #01bce9;
+    background-color: #01bce9;
+    padding: 0.6rem 0.8rem;
+    font-size: 1rem;
+}
+
+.patient-records-document-action-button .dropdown-item:active,
+.patient-records-document-action-button .dropdown-item:hover {
+    color: black;
+    text-decoration: none;
+    background-color: #e0e0e0;
+}
+
+.patient-records-document-action-button .dropdown-item{
+    color: #838383;
+}
+
+.patient-records-document-view-button a{
+    background: transparent;
+    border: 1px solid #01bce9;
+    color: #01bce9;
+    padding: 0.6rem 0.8rem;
+    border-radius: 0.4rem;
+    text-decoration: none;
+}
+
+.patient-records-document-view-button a:hover,
+.patient-records-document-view-button a:focus {
+    color: #ffffff;
+    border: 1px solid #01bce9;
+    background-color: #01bce9;
+}
+
+.patient-records-document-table .table tr th:nth-child(1) {
+    width: 11%;
+}
+
+.patient-records-document-table .table tr th:nth-child(2) {
+    width: 11%;
+}
+
+.patient-records-document-table .table tr th:nth-child(3) {
+    width: 12%;
+}
+
+.patient-records-document-table .table tr th:nth-child(4) {
+    width: 10%;
+}
+
+.patient-records-document-table .table tr th:nth-child(5) {
+    width: 12%;
+}
+.patient-records-document-table .table tr th:nth-child(6) {
+    width: 9%;
+}
+.patient-records-document-table .table tr th:nth-child(7) {
+    width: 10%;
+    text-align: center;
+}
+.patient-records-document-table .table tr th:nth-child(8) {
+    width: 10%;
+    text-align: center;
+}
+
+.patient-records-document-table .table tr td:nth-child(7) {
+    text-align: center;
+}
+
+.patient-records-document-table .table tr td:nth-child(8) {
+    text-align: center;
+}
+
+.patient-records-document-table .row-dashboard-actual-table tbody {
+    border: none;
+}
+
+.patient-records-document-table .row-dashboard-actual-table tbody tr td {
+    border: none;
+    border-top: 1px solid #cdcdcd;
+}
+
+
+.patient-records-document-patient-field .dashboard-table-button img {
+    width: 18px;
+    height: 18px;
+}
+
+
+.patient-records-document-patient-field td {
+    background-color: #ffffff;
+    color: #838383;
+    vertical-align: middle;
+}
+
+.patient-records-document-table .row-dashboard-actual-table thead tr th {
+    background-color: #e3e3e3;
+    vertical-align: middle;
+    font-size: 1rem;
+    padding: 0.8rem 0.5rem;
+    font-weight: 600;
+}
+
+.patient-records-document-table .form-check-input {
+    height: 20px;
+    width: 20px;
+}
+
+.patient-records-document-action-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.patient-records-detail {
+    position: relative;
+    background-color: #EBFAFD;
+    border-top: 1px solid #838383;
+}
+
+.patient-records-detail-last {
+    border-bottom: none;
+    border-radius: 0rem 0rem 1rem 1rem;
+}
+
+
+
+.patient-records-main-detail-padding {
+    padding-top: 1rem;
+    z-index: -1;
+}
+
+.patient-records-main-detail-padding input {
+    z-index: 6;
+}
+
+.patient-records-main-internal-component {
+    padding: 1rem;
+    padding-top: 0rem;
+}
+
+.patient-records-main-content {
+    color: #7b7b7b;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+
+.patient-records-internal-sub-component {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.patient-records-img-content-sub {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    flex-wrap: wrap;
+}
+
+.patient-records-img-content-sub img {
+    border: 2px solid #01bce9;
+    border-radius: 50%;
+    padding: 0.3rem;
+    width: 28px;
+    height: 28px;
+}
+
+.patient-records-internal-sub-content {
+    font-size: 1rem;
+    color: #7b7b7b;
+    font-weight: 500;
+}
+
+.patient-records-internal-sub-sub-content {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #515151;
+}
+
+.patient-records-view-case-document-sub-menu button {
+    background: transparent;
+    border: 1px solid #01bce9;
+    color: #01bce9;
+    padding: 0.3rem 0.7rem;
+    border-radius: 0.4rem;
+    width: 100%;
+}
+
+.patient-records-view-case-document-sub-menu button:hover {
+    background-color: #01bce9;
+    border: 1px solid #01bce9;
+    color: #ffffff;
+}
+
+.patient-records-view-case-document-sub-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.7rem;
+    width: 100%;
+}
+
+.patient-records-mobile-open-panel {
+    display: none;
+}
+
+@media (max-width:1100px) {
+    .admin-all-main-component {
+        width: 98%;
+    }
+
+    .patient-records-document-table .table tr th:nth-child(1) {
+        width: 11%;
+    }
+    
+    .patient-records-document-table .table tr th:nth-child(2) {
+        width: 11%;
+    }
+    
+    .patient-records-document-table .table tr th:nth-child(3) {
+        width: 12%;
+    }
+    
+    .patient-records-document-table .table tr th:nth-child(4) {
+        width: 10%;
+    }
+    
+    .patient-records-document-table .table tr th:nth-child(5) {
+        width: 12%;
+    }
+    .patient-records-document-table .table tr th:nth-child(6) {
+        width: 9%;
+    }
+    .patient-records-document-table .table tr th:nth-child(7) {
+        width: 10%;
+        text-align: center;
+    }
+    .patient-records-document-table .table tr th:nth-child(8) {
+        width: 10%;
+        text-align: center;
+    }
+    .patient-records-document-table .table tr td:nth-child(3) {
+        text-wrap: nowrap;
+    }
+}
+
+@media (max-width:960px) {
+    .admin-all-main-component {
+        width: 98%;
+    }
+
+    .patient-records-document-table .table tr th:nth-child(3) {
+        width: 18%;
+    }
+
+    .patient-records-document-table .table tr th:nth-child(4) {
+        width: 22%;
+    }
+
+    .patient-records-document-table .table tr th:nth-child(5) {
+        width: 12%;
+    }
+}
+
+@media (max-width:767px) {
+    .admin-all-main-component {
+        width: 98%;
+    }
+
+    .below-nav-content-admin {
+        margin: 1rem;
+    }
+
+    .below-nav-content-patient-document {
+        margin: 1rem;
+    }
+
+    .main-component-admin-dashboard {
+        padding: 0.5rem;
+    }
+
+    .patient-records-search-create-button {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    .patient-records-add-business-button {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: end;
+    }
+
+    .patient-records-add-business-button-content{
+        display: none;
+    }
+
+    .admin-below-all-main-component {
+        padding: 1rem;
+    }
+}
+
+@media (max-width:500px) {
+
+
+    .below-nav-content-admin {
+        margin: 0.8rem;
+    }
+
+    .main-component-admin-dashboard {
+        padding: 0rem;
+    }
+
+    .below-nav-content-patient-document {
+        margin: 0.8rem;
+    }
+
+}
+
+@media (max-width:426px) {
+
+
+    .patient-records-internal-sub-component {
+        padding: 1rem;
+    }
+
+}

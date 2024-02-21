@@ -1,0 +1,173 @@
+.below-nav-content-admin-dashboard {
+    min-height: 50vh;
+}
+
+.main-component-below-padding {
+    padding-bottom: 3rem;
+}
+
+.admin-all-main-component {
+    width: 70%;
+    margin: auto;
+}
+
+.main-component-admin-dashboard {
+    padding: 1rem;
+}
+
+.admin-all-heading-and-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.7rem;
+}
+
+.admin-document-heading {
+    font-size: 1.5rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+}
+
+.admin-back-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+    color: #01bce9;
+    border: 2px solid #01bce9;
+    border-radius: 0.4rem;
+    padding: 0.5rem 0.8rem;
+    background: transparent;
+    cursor: pointer;
+
+}
+
+.admin-back-button a {
+    display: flex;
+    text-decoration: none;
+    color: #01bce9;
+}
+
+.admin-back-button a:active {
+    color: #ffffff;
+    background-color: #01bce9;
+}
+
+.admin-back-button svg {
+    color: #01bce9;
+}
+
+.admin-below-all-main-component {
+    border-radius: 1rem;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 6px grey;
+}
+
+.admin-my-profile-main-component{
+    padding: 1rem;
+}
+
+.admin-profile-component-heading{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+}
+.admin-profile-form-reset-password-setting{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.admin-profile-form-reset-password-button{
+    border: 1px solid #01bce9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background: transparent;
+    height: 52px;
+    width: 10rem;
+}
+.admin-profile-form-reset-password-button-content{
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #01bce9;
+}
+.admin-profile-multiple-checkboxes{
+    display: inline-block;
+}
+
+.admin-profile-multiple-checkboxes .form-check-label{
+    color: grey;
+}
+
+.admin-profile-form-edit-setting{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.admin-profile-form-edit-button{
+    border: 1px solid #01bce9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: #01bce9;
+    height: 52px;
+    width: 6rem;
+}
+.admin-profile-form-edit-button-content{
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+
+@media (max-width:1100px) {
+    .admin-all-main-component {
+        width: 80%;
+    }
+}
+
+@media (max-width:960px) {
+    .admin-all-main-component {
+        width: 85%;
+    }
+}
+
+@media (max-width:767px) {
+    .admin-all-main-component {
+        width: 100%;
+    }
+    
+    .below-nav-content-admin {
+        margin: 1rem;
+    }
+    .below-nav-content-patient-document {
+        margin: 1rem;
+    }
+
+    .main-component-admin-dashboard {
+        padding: 0.5rem;
+    }
+
+    
+}
+
+@media (max-width:500px) {
+
+    
+    .below-nav-content-admin {
+        margin: 0.8rem;
+    }
+    .main-component-admin-dashboard {
+        padding: 0rem;
+    }
+
+    .below-nav-content-patient-document {
+        margin: 0.8rem;
+    }
+
+}

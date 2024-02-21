@@ -1,0 +1,389 @@
+.below-nav-content-admin-dashboard {
+    min-height: 50vh;
+}
+
+.main-component-below-padding {
+    padding-bottom: 3rem;
+}
+
+.admin-all-main-component {
+    width: 70%;
+    margin: auto;
+}
+
+.main-component-admin-dashboard {
+    padding: 1rem;
+}
+
+.admin-all-heading-and-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.7rem;
+}
+
+.admin-document-heading {
+    font-size: 1.5rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+}
+
+.admin-back-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+    color: #01bce9;
+    border: 2px solid #01bce9;
+    border-radius: 0.4rem;
+    padding: 0.5rem 0.8rem;
+    background: transparent;
+    cursor: pointer;
+
+}
+
+.admin-back-button a {
+    display: flex;
+    text-decoration: none;
+    color: #01bce9;
+}
+
+.admin-back-button a:active {
+    color: #ffffff;
+    background-color: #01bce9;
+}
+
+.admin-back-button svg {
+    color: #01bce9;
+}
+
+.admin-below-all-main-component {
+    border-radius: 1rem;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 6px grey;
+}
+
+.close-case-first-element{
+    padding: 1rem;
+    display: flex;
+    justify-content: start;
+    gap: 0.5rem;
+    flex-direction: column;
+}
+
+.close-case-detail-with-button{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+.close-case-sub-detail{
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #9f9f9f;
+}
+
+.close-case-main-detail{
+    display: flex;
+    gap: 0.3rem;
+    align-items: end;
+}
+.close-case-main-detail-name{
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #01bce9;
+}
+.close-case-case-number{
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #9f9f9f;
+}
+
+.close-case-first-element-button{
+    background: transparent;
+    border: 1px solid #01bce9;
+    border-radius: 0.4rem;
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+    color: #01bce9;
+    font-weight: 400;
+}
+
+.close-case-another-heading{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.close-case-document-table .table tr th:nth-child(1) {
+    width: 58%;
+}
+.close-case-document-table .table tr th:nth-child(2) {
+    width: 26%;
+}
+
+.close-case-document-table .table tr th:nth-child(3) {
+    width: 16%;
+    text-align: center;
+}
+
+.close-case-document-table .table tr td:nth-child(3) {
+    text-align: center;
+}
+
+.close-case-document-table .row-dashboard-actual-table tbody {
+    border: none;
+    border-bottom: 1px solid #cdcdcd ;
+}
+
+.close-case-document-table .row-dashboard-actual-table tbody tr td {
+    border: none;
+    border-top: 1px solid #cdcdcd ;
+}
+
+.close-case-document-table .row-dashboard-actual-table thead tr th {
+    background-color: #e3e3e3;
+    vertical-align: middle;
+    font-size: 1rem;
+    padding: 0.8rem 0.5rem;
+    font-weight: 600;
+}
+
+.close-case-document-patient-field .dashboard-table-button img{
+    width: 18px;
+    height: 18px;
+}
+
+
+.close-case-document-patient-field td {
+    background-color: #ffffff;
+    color: #838383;
+    vertical-align: middle;
+}
+
+.close-case-document-pdf-image-content-format{
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+.close-case-document-pdf-image-content-format img{
+    width: 20px;
+    height: 20px;
+}
+
+.close-case-document-action-button button{
+    background-color: #ffffff;
+    color: #00bcee;
+    border: 1px solid #01bce9;
+    border-radius: 0.4rem;
+    padding: 0.3rem 0.5rem;
+}
+
+.close-case-document-action-button button img{
+    width: 18px;
+    height: 18px;
+}
+
+.close-case-sub-heading {
+    padding: 1.1rem;
+}
+
+
+.close-case-first-sub-heading{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+
+.close-case-form-call-button-icon{
+    width: 20px;
+    height: 20px;
+}
+
+.close-case-form-call-button{
+    border: 2px solid #01bce9;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background: transparent;
+    height: 52px;
+
+}
+
+.close-case-phone-input{
+    position: relative;
+}
+
+.close-case-phone-input input{
+    padding-right: 3rem;
+}
+
+.close-case-phone-icon{
+    position: absolute;
+    top: 0.8rem;
+    right: 0.9rem;
+
+}
+
+.close-case-phone-icon img{
+    height: 20px;
+    width: 20px;
+}
+
+.close-case-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 0.4rem;
+}
+
+.close-case-edit-button{
+    background-color: #01bce9;
+    border: 1px solid #01bce9;
+    border-radius: 0.4rem;
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+    color: #ffffff;
+    font-weight: 400;
+}
+
+.close-case-cancel-button{
+    background: transparent;
+    border: 1px solid #01bce9;
+    border-radius: 0.4rem;
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+    color: #01bce9;
+    font-weight: 400;
+}
+
+.close-case-document-mobile{
+    display: none;
+}
+
+.close-case-document-mobile-checkbox-pdf{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.2rem;
+}
+
+.close-case-document-mobile-checkbox-pdf img{
+    width: 20px;
+    height: 20px;
+}
+
+.close-case-document-mobile-uploader-date{
+    margin-bottom: 0.6rem;
+}
+
+.close-case-document-mobile-action-button button {
+    background-color: #ffffff;
+    color: #00bcee;
+    border: 1px solid #01bce9;
+    border-radius: 0.4rem;
+    padding: 0.3rem 0.5rem;
+}
+.close-case-document-mobile-action-button{
+    margin-bottom: 0.4rem;
+}
+
+.close-case-document-mobile-action-button img{
+    width: 18px;
+    height: 18px;
+}
+
+.close-case-mobile-phone{
+    display: none;
+}
+@media (max-width:1100px) {
+    .admin-all-main-component {
+        width: 80%;
+    }
+}
+
+@media (max-width:960px) {
+    .admin-all-main-component {
+        width: 85%;
+    }
+}
+
+@media (max-width:767px) {
+    .admin-all-main-component {
+        width: 100%;
+    }
+    
+    .below-nav-content-admin {
+        margin: 1rem;
+    }
+    .below-nav-content-patient-document {
+        margin: 1rem;
+    }
+
+    .main-component-admin-dashboard {
+        padding: 0.5rem;
+    }
+
+    .close-case-document-mobile{
+        display: block;
+        display: block;
+        padding-left: 1rem;
+        border-top: 1px solid #cdcdcd;
+        border-bottom: 1px solid #cdcdcd;
+        padding-top: 0.6rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .close-case-mobile-phone{
+        display: block;
+    }
+
+    .close-case-desktop-phone{
+        display: none;
+    }
+
+    .close-case-main-detail {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0rem;
+    }
+
+    .close-case-detail-with-button {
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        gap: 0.4rem;
+    }
+    
+}
+
+@media (max-width:500px) {
+
+    
+    .below-nav-content-admin {
+        margin: 0.8rem;
+    }
+    .main-component-admin-dashboard {
+        padding: 0rem;
+    }
+
+    .below-nav-content-patient-document {
+        margin: 0.8rem;
+    }
+
+    .close-case-edit-button{
+        border-radius: 0.3rem;
+        padding: 0.4rem 0.8rem;
+        font-size: 0.8rem;
+    }
+    
+    .close-case-cancel-button{
+        border-radius: 0.3rem;
+        padding: 0.4rem 0.8rem;
+        font-size: 0.8rem;
+    }
+
+}

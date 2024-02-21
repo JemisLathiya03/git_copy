@@ -1,0 +1,347 @@
+.below-nav-content-admin-dashboard {
+    min-height: 50vh;
+}
+
+.main-component-below-padding {
+    padding-bottom: 3rem;
+}
+
+.admin-all-main-component {
+    width: 75%;
+    margin: auto;
+}
+
+.main-component-admin-dashboard {
+    padding: 1rem;
+}
+
+.admin-all-heading-and-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.7rem;
+}
+
+.admin-document-heading {
+    font-size: 1.5rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+}
+
+.admin-back-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+    color: #01bce9;
+    border: 2px solid #01bce9;
+    border-radius: 0.4rem;
+    padding: 0.5rem 0.8rem;
+    background: transparent;
+    cursor: pointer;
+
+}
+
+.admin-back-button a {
+    display: flex;
+    text-decoration: none;
+    color: #01bce9;
+}
+
+.admin-back-button a:active {
+    color: #ffffff;
+    background-color: #01bce9;
+}
+
+.admin-back-button svg {
+    color: #01bce9;
+}
+
+.admin-below-all-main-component {
+    border-radius: 1rem;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 6px grey;
+    padding-bottom: 2rem;
+}
+
+.request-shift-search{
+    width: 15rem;
+    position: relative;
+}
+.request-shift-search-create-button{
+    padding: 1rem;
+}
+.request-shift-search-create-button .request-shift-search select{
+    padding-left: 2.2rem;
+    height: 44px;
+}
+
+.search-menu-icon{
+    position: absolute;
+    top: 0.5rem;
+    left: 0.6rem;
+}
+
+.request-shift-create-button button{
+    color: #ffffff;
+    padding: 0.6rem 0.8rem;
+    border-radius: 0.4rem;
+}
+.request-shift-view-shift-button{
+    background-color: #2e7d32;
+    border: 1px solid #2e7d32;
+}
+.request-shift-approve-shift-button{
+    background-color: #2e7d32;
+    border: 1px solid #2e7d32;
+}
+
+.request-shift-Delete-shift-button{
+    background-color: #d32f2f;
+    border: 1px solid #d32f2f;
+}
+
+.request-shift-search-create-button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.request-shift-document-table .table tr th:nth-child(1) {
+    width: 6%;
+    text-align: center;
+}
+
+.request-shift-document-table .table tr th:nth-child(3) {
+    width: 22%;
+}
+
+.request-shift-document-table .table tr th:nth-child(4) {
+    width: 22%;
+}
+
+.request-shift-document-table .table tr th:nth-child(5) {
+    width: 16%;
+}
+
+.request-shift-document-table .table tr td:nth-child(1) {
+    text-align: center;
+}
+
+.request-shift-document-table .row-dashboard-actual-table tbody {
+    border: none;
+}
+
+.request-shift-document-table .row-dashboard-actual-table tbody tr td {
+    border: none;
+    border-top: 1px solid #cdcdcd ;
+}
+
+
+.request-shift-document-patient-field .dashboard-table-button img{
+    width: 18px;
+    height: 18px;
+}
+
+
+.request-shift-document-patient-field td {
+    background-color: #ffffff;
+    color: #838383;
+    vertical-align: middle;
+}
+
+.request-shift-document-table .row-dashboard-actual-table thead tr th {
+    background-color: #e3e3e3;
+    vertical-align: middle;
+    font-size: 1rem;
+    padding: 0.8rem 0.5rem;
+    font-weight: 600;
+}
+
+.request-shift-document-table .form-check-input {
+    height: 20px;
+    width: 20px;
+}
+
+.request-shift-document-action-button button{
+       background: transparent;
+        border: 1px solid #01bce9;
+        color: #01bce9;
+        padding: 0.6rem 0.8rem;
+        border-radius: 0.4rem;
+}
+.request-shift-document-action-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.request-shift-detail {
+    position: relative;
+    background-color: #EBFAFD;
+    border-top: 1px solid #838383;
+}
+
+.request-shift-detail-last {
+    border-bottom: none;
+    border-radius: 0rem 0rem 1rem 1rem;
+}
+
+
+
+.request-shift-main-detail-padding {
+    padding-top: 1rem;
+    z-index: -1;
+}
+
+.request-shift-main-detail-padding input{
+    z-index: 6;
+}
+
+.request-shift-main-internal-component{
+    padding: 1rem;
+    padding-top: 0rem;
+}
+
+.request-shift-checkbox-content{
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding-bottom: 0.9rem;
+}
+
+.request-shift-main-content{
+    color: #7b7b7b;
+    font-weight: 500;
+}
+
+.request-shift-mobile-main-element{
+    display: flex;
+    gap: 0.4rem;
+}
+
+.request-shift-mobile-main-element-main{
+    font-size: 0.9rem;
+    color: #7b7b7b;
+    font-weight: 500;
+}
+
+
+.request-shift-mobile-open-panel{
+    display: none;
+}
+
+@media (max-width:1100px) {
+    .admin-all-main-component {
+        width: 85%;
+    }
+}
+
+@media (max-width:960px) {
+    .admin-all-main-component {
+        width: 90%;
+    }
+    .request-shift-document-table .table tr th:nth-child(1) {
+        width: 6%;
+        text-align: center;
+    }
+    
+    .request-shift-document-table .table tr th:nth-child(3) {
+        width: 24%;
+    }
+    
+    .request-shift-document-table .table tr th:nth-child(4) {
+        width: 24%;
+    }
+    
+    .request-shift-document-table .table tr th:nth-child(5) {
+        width: 19%;
+    }
+
+    .request-shift-search-create-button {
+        flex-direction: column;
+        gap: 0.7rem;
+        justify-content: center;
+    }
+
+    .request-shift-search {
+        width: 100%;
+        position: relative;
+    }
+}
+
+@media (max-width:767px) {
+    .admin-all-main-component {
+        width: 100%;
+    }
+    
+    .below-nav-content-admin {
+        margin: 1rem;
+    }
+    .below-nav-content-patient-document {
+        margin: 1rem;
+    }
+
+    .main-component-admin-dashboard {
+        padding: 0.5rem;
+    }
+
+    .request-shift-search-create-button{
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    .request-shift-search {
+        width: 100%;
+        position: relative;
+    }
+
+    
+}
+
+@media (max-width:600px) {
+
+    .request-shift-create-button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 0.7rem;
+        width: 100%;
+    }
+
+    .request-shift-create-button button {
+        width: 100%;
+    }
+
+}
+
+@media (max-width:500px) {
+
+    
+    .below-nav-content-admin {
+        margin: 0.8rem;
+    }
+    .main-component-admin-dashboard {
+        padding: 0rem;
+    }
+
+    .below-nav-content-patient-document {
+        margin: 0.8rem;
+    }
+
+}
+
+@media (max-width:426px) {
+
+    
+    .request-shift-internal-sub-component {
+        padding: 1rem;
+    }
+
+}

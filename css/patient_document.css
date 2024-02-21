@@ -1,0 +1,400 @@
+.patient-document-main-component{
+    width: 70%;
+    margin: auto;
+}
+
+.patient-document-heading-and-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.7rem;
+}
+
+
+.patient-document-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+    color: #01bce9;
+    border: 2px solid #01bce9;
+    border-radius: 0.4rem;
+    padding: 0.5rem 0.8rem;
+    background: transparent;
+    cursor: pointer;
+
+}
+
+.patient-document-button a {
+    display: flex;
+    text-decoration: none;
+    color: #01bce9;
+}
+
+.patient-document-button:hover,
+.patient-document-button:active{
+    color: #ffffff;
+    background-color: #01bce9;
+}
+
+.patient-document-button:hover .back-button-content,
+.patient-document-button:active .back-button-content{
+    color: #ffffff;
+}
+
+.patient-document-button:hover .back-button-icon img,
+.patient-document-button:active .back-button-icon img{
+    filter: invert(100%) sepia(0%) saturate(7413%) hue-rotate(326deg) brightness(93%) contrast(122%);
+}
+
+.patient-document-button img {
+    filter: invert(67%) sepia(44%) saturate(5313%) hue-rotate(152deg) brightness(98%) contrast(99%);
+}
+
+.patient-document-button:hover .download-all-button-content,
+.patient-document-button:active .download-all-button-content{
+    color: #ffffff;
+}
+
+.patient-document-heading {
+    font-size: 1.5rem;
+    font-weight: 600;
+
+}
+
+.patient-document-below-main-component {
+    border-radius: 1rem;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 6px grey;
+}
+
+.patient-sub-heading-upload-button {
+    padding: 1.1rem;
+}
+
+.patient-first-sub-heading {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #8e8e8e;
+}
+
+.patient-second-sub-heading {
+    display: flex;
+    gap: 0.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.patient-actual-name {
+    display: flex;
+    align-items: end;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #00adef;
+}
+
+.patient-actual-name-after {
+    display: flex;
+    align-items: end;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #8e8e8e;
+}
+
+
+.patient-document-action-button button{
+    background-color: #ffffff;
+    color: #00bcee;
+    border: 1px solid #01bce9;
+    border-radius: 0.4rem;
+    padding: 0.3rem 0.5rem;
+}
+
+.patient-document-action-button button img{
+    filter: invert(66%) sepia(30%) saturate(5655%) hue-rotate(150deg) brightness(95%) contrast(100%);
+    width: 18px;
+    height: 18px;
+}
+
+.patient-document-action-button button:hover,
+.patient-document-action-button button:active{
+    background-color: #01bce9;
+}
+
+.patient-document-action-button button:hover img,
+.patient-document-action-button button:active img{
+    filter: invert(100%) sepia(3%) saturate(150%) hue-rotate(238deg) brightness(114%) contrast(100%);
+}
+
+.patient-document-paragraph-type-content {
+    margin-bottom: 1rem;
+    color: #8e8e8e;
+    font-weight: 500;
+}
+
+.patient-document-sub-heading-and-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.7rem;
+}
+
+.patient-document-sub-heading-and-button .patient-document-heading {
+    font-size: 1.3rem;
+    font-weight: 600;
+
+}
+
+.patient-dashbord-first-column {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+
+.patient-document-table .table tr th:nth-child(1) {
+    width: 6%;
+    text-align: center;
+}
+
+.patient-document-table .table tr td:nth-child(1) {
+    text-align: center;
+}
+
+.patient-document-table .table tr th:nth-child(3) {
+    width: 14%;
+}
+
+.patient-document-table .table tr th:nth-child(4) {
+    width: 18%;
+}
+
+.patient-document-table .table tr th:nth-child(5) {
+    width: 10%;
+    text-align: center;
+}
+
+.patient-document-table .table tr td:nth-child(5) {
+    text-align: center;
+}
+
+.patient-document-table .row-dashboard-actual-table tbody {
+    border: none;
+}
+.patient-document-pdf-image-content-format{
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+.patient-document-pdf-image-content-format img{
+    width: 20px;
+    height: 20px;
+}
+.patient-document-table .row-dashboard-actual-table tbody tr td {
+    border: none;
+    border-top: 1px solid #cdcdcd ;
+}
+
+.patient-document-table .row-dashboard-actual-table thead tr th {
+    background-color: #e3e3e3;
+    vertical-align: middle;
+    font-size: 1rem;
+    padding: 0.8rem 0.5rem;
+    font-weight: 600;
+}
+
+
+.download-all-button-icon{
+    display: none;
+}
+
+.patient-document-patient-field .dashboard-table-button img{
+    width: 18px;
+    height: 18px;
+}
+
+
+.patient-document-patient-field td {
+    background-color: #ffffff;
+    color: #838383;
+    vertical-align: middle;
+}
+
+.patient-document-mobile-checkbox-pdf{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.2rem;
+}
+
+.patient-document-mobile-checkbox-pdf img{
+    width: 20px;
+    height: 20px;
+}
+
+.patient-document-card{
+    padding: 1rem;
+    border-top: 1px solid #8e8e8e;
+}
+
+.patient-document-card input[type="checkbox" i] {
+    background-color: #00adef;
+    cursor: pointer;
+    appearance: auto;
+    width: 17px;
+    height: 17px;
+    box-sizing: border-box;
+    margin: 3px 3px 3px 4px;
+    padding: initial;
+    border: 1px solid #00adef;
+}
+
+
+.patient-document-mobile-action-button .dashboard-table-button img{
+    width: 18px;
+    height: 18px;
+}
+
+.patient-document-mobile-action-button button {
+    background-color: #ffffff;
+    color: #00bcee;
+    border: 1px solid #01bce9;
+    border-radius: 0.4rem;
+    padding: 0.3rem 0.5rem;
+}
+
+.patient-document-mobile-uploader-name{
+    margin-bottom: 0.3rem;
+}
+
+.patient-document-mobile-uploader-date{
+    margin-bottom: 0.6rem;
+}
+.patient-document-mobile-action-button{
+    margin-bottom: 0.4rem;
+}
+
+.patient-document-mobile{
+    display: none;
+}
+
+@media (max-width:1100px) {
+    .patient-document-main-component {
+        width: 80%;
+    }
+}
+
+@media (max-width:960px) {
+    .patient-document-main-component {
+        width: 85%;
+    }
+}
+
+@media (max-width:910px) {
+    .patient-document-table .table tr th:nth-child(3) {
+        width: 18%;
+    }
+
+    .patient-document-table .table tr th:nth-child(4) {
+        width: 22%;
+    }
+
+    .patient-document-table .table tr th:nth-child(5) {
+        width: 12%;
+    }
+}
+
+@media (max-width:767px) {
+
+    .patient-document-mobile{
+        display: block;
+    }
+    .below-nav-content-patient-document {
+        margin: 1rem;
+    }
+    .patient-document-main-component {
+        width: 100%;
+    }
+
+    .main-component-patient-dashboard {
+        padding: 0.5rem;
+    }
+
+    .patient-dashboard-create-request-actual-button-in-mobile {
+        display: block;
+    }
+
+    .patient-dashboard-create-request-actual-button-in-desktop {
+        display: none;
+    }
+}
+
+@media (max-width:500px) {
+
+    .main-component-patient-dashboard {
+        padding: 0rem;
+    }
+
+    .below-nav-content-patient-document {
+        margin: 0.8rem;
+    }
+
+    .patient-document-heading {
+        font-size: 1.25rem;
+    }
+
+    .patient-first-sub-heading {
+        font-size: 0.7rem;
+    }
+
+    .patient-actual-name {
+        font-size: 1.1rem;
+    }
+
+    .patient-actual-name-after {
+        font-size: 0.8rem;
+    }
+
+    .patient-document-paragraph-type-content {
+        font-size: 0.85rem;
+    }
+
+    .plateform-input-form {
+        font-size: 0.9rem;
+        height: 41px;
+        padding: 0.5rem 0.75em;
+    }
+
+    .plateform-input-form-upload-label {
+        height: 41px;
+        width: 52px;
+    }
+
+
+    .plateform-input-form-upload-label span {
+        display: none;
+    }
+    .patient-document-sub-heading-and-button .patient-document-heading {
+        font-size: 1.1rem;
+    }
+
+    .patient-document-main-component .plateform-input-margin {
+        margin-bottom: 0.5rem;
+    }
+
+    .download-all-button-icon{
+        display: block;
+    }
+
+    .download-all-button-icon img{
+        width: 18px;
+        height: 18px;
+    }
+
+    .download-all-button-content{
+        display: none;
+    }
+    .patient-document-button {
+        padding: 0.3rem 0.5rem;
+    }
+
+}

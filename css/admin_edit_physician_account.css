@@ -1,0 +1,529 @@
+.below-nav-content-admin-dashboard {
+    min-height: 50vh;
+}
+
+.main-component-below-padding {
+    padding-bottom: 3rem;
+}
+
+.admin-all-main-component {
+    width: 70%;
+    margin: auto;
+}
+
+.main-component-admin-dashboard {
+    padding: 1rem;
+}
+
+.admin-all-heading-and-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.7rem;
+}
+
+.admin-document-heading {
+    font-size: 1.5rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+}
+
+.admin-back-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+    color: #01bce9;
+    border: 2px solid #01bce9;
+    border-radius: 0.4rem;
+    padding: 0.5rem 0.8rem;
+    background: transparent;
+    cursor: pointer;
+
+}
+
+.admin-back-button a {
+    display: flex;
+    text-decoration: none;
+    color: #01bce9;
+}
+
+.admin-back-button a:active {
+    color: #ffffff;
+    background-color: #01bce9;
+}
+
+.admin-back-button svg {
+    color: #01bce9;
+}
+
+.admin-below-all-main-component {
+    border-radius: 1rem;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 6px grey;
+}
+
+.admin-edit-physician-main-component{
+    padding: 1rem;
+}
+
+.admin-edit-physician-component-heading{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+}
+.admin-deit-physician-form-reset-password-setting{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.admin-edit-physician-form-reset-password-button{
+    border: 1px solid #01bce9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background: transparent;
+    height: 52px;
+    width: 10rem;
+}
+.admin-edit-physician-form-reset-password-button-content{
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #01bce9;
+}
+.admin-edit-physician-multiple-checkboxes{
+    display: inline-block;
+}
+
+.admin-edit-physician-multiple-checkboxes .form-check-label{
+    color: grey;
+}
+
+.admin-edit-physician-form-edit-setting{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.admin-edit-physician-form-edit-button{
+    border: 1px solid #01bce9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: #01bce9;
+    height: 52px;
+    width: 6rem;
+}
+.admin-edit-physician-form-edit-button-content{
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.admin-edit-physician-multiple-button-setting{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 0.7rem;
+
+}
+.admin-edit-physician-form-payrate-setting{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.admin-edit-physician-form-payrate-button{
+    border: 1px solid #01bce9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: #01bce9;
+    height: 52px;
+    width: 9rem;
+}
+.admin-edit-physician-form-payrate-button-content{
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.form-chosse-file-hidden-input {
+    display: none;
+}
+
+.admin-edit-physician-form-upload-label {
+    background-color: #01bce9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0rem;
+    right: 0rem;
+    height: 52px;
+    width: 100px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    gap: 6px;
+    border: none;
+    cursor: pointer;
+}
+
+.admin-edit-physician-input-form {
+    padding: 1rem 0.75em;
+    line-height: 1.25;
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 400;
+    color: grey;
+    border-radius: 5px;
+    border: 1px solid #c2c2c2;
+    background: transparent;
+    transition: 0.1s ease;
+    z-index: 11;
+    height: 52px;
+}
+
+.admin-edit-physician-form-upload {
+    position: relative;
+}
+
+.admin-edit-physician-create-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 52px;
+    background-color: #01bce9;
+    border-radius: 0.5rem;
+    gap: 0.4rem;
+    width: 70%;
+    border: 1px solid #01bce9;
+}
+
+.admin-edit-physician-create-button-content{
+    color: #ffffff;
+}
+.admin-edit-physician-form-upload-document{
+    background-color: #01bce9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 46px;
+    width: 100px;
+    color: white;
+    border-radius: 5px;
+    gap: 6px;
+    border: none;
+    cursor: pointer;
+}
+
+.admin-edit-physician-view-button{
+    background-color: #01bce9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 46px;
+    width: 100px;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.admin-edit-physician-document-content-buttons{
+    display: flex;
+    align-items: center;
+}
+
+.admin-edit-physician-document-checkbox{
+    width: 4%;
+}
+
+.admin-edit-physician-document-content{
+    width: 28%;
+    color: #7e7e7e;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.admin-edit-physician-document-view-upload-button{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.admin-edit-physician-document-checkbox .form-check-input{
+    height: 20px;
+    width: 20px;
+}
+
+.admin-edit-physician-form-upload-icon-content{
+    background-color: #01bce9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 46px;
+    width: 100px;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.admin-edit-physician-form-upload-icon{
+    display: none;
+}
+
+.admin-edit-physician-form-view{
+    background-color: #01bce9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 46px;
+    width: 70px;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+.admin-edit-physician-form-view-icon{
+    display: none;
+}
+
+.admin-edit-physician-document-content-buttons-bottom-border{
+    padding-bottom: 0.8rem;
+    margin-bottom: 0.8rem;
+}
+
+.edit-physician-account-save-delete-button{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 0.7rem;
+}
+
+.edit-physician-account-save-button{
+    background-color: #01bce9;
+    padding: 0.6rem 0.8rem;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.edit-physician-account-delete-button{
+    background-color: #db0202;
+    padding: 0.6rem 0.8rem;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.admin-edit-physician-document-content-last-buttons-bottom-border{
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width:1600px) {
+    .admin-edit-physician-create-button{
+        width: 80%;
+    }
+    .admin-edit-physician-document-checkbox{
+        width: 6%;
+    }
+    
+    .admin-edit-physician-document-content{
+        width: 35%;
+    }  
+    .admin-edit-physician-document-view-upload-button{
+        width: 24%;
+    }
+}
+
+
+@media (max-width:1300px) {
+    .admin-edit-physician-create-button{
+        width: 90%;
+    }
+
+    .admin-edit-physician-document-checkbox{
+        width: 7%;
+    }
+    
+    .admin-edit-physician-document-content{
+        width: 44%;
+    }  
+    .admin-edit-physician-document-view-upload-button{
+        width: 26%;
+    }
+}
+
+@media (max-width:1100px) {
+    .admin-all-main-component {
+        width: 80%;
+    }
+    .admin-edit-physician-create-button{
+        width: 100%;
+    }
+}
+
+@media (max-width:960px) {
+    .admin-all-main-component {
+        width: 85%;
+    }
+    .admin-edit-physician-document-checkbox{
+        width: 8%;
+    }
+    
+    .admin-edit-physician-document-content{
+        width: 50%;
+    }  
+    .admin-edit-physician-document-view-upload-button{
+        width: 32%;
+    }
+}
+
+@media (max-width:767px) {
+    .admin-all-main-component {
+        width: 100%;
+    }
+    
+    .below-nav-content-admin {
+        margin: 1rem;
+    }
+    .below-nav-content-patient-document {
+        margin: 1rem;
+    }
+
+    .main-component-admin-dashboard {
+        padding: 0.5rem;
+    }
+
+    .admin-edit-physician-document-checkbox{
+        width: 8%;
+    }
+    
+    .admin-edit-physician-document-content{
+        width: 80%;
+    }  
+    .admin-edit-physician-document-view-upload-button{
+        width: 48%;
+    }
+
+    
+}
+
+
+@media (max-width:600px) {
+    .admin-edit-physician-document-checkbox{
+        width: 8%;
+    }
+    
+    .admin-edit-physician-document-content{
+        width: 58%;
+    }  
+    .admin-edit-physician-document-view-upload-button{
+        width: 34%;
+    }
+
+    .admin-edit-physician-document-content-buttons-bottom-border{
+        border-bottom: 1px solid #c2c2c2;
+        padding-bottom: 0.8rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .admin-edit-physician-document-checkbox{
+        width: 12%;
+    }
+    
+    .admin-edit-physician-document-content{
+        width: 68%;
+    }  
+    .admin-edit-physician-document-view-upload-button{
+        width: 20%;
+    }
+
+    .admin-edit-physician-form-upload-icon{
+        display: block;
+    }
+
+    .admin-edit-physician-form-view-icon{
+        display: block;
+    }
+
+    .admin-edit-physician-form-upload-content{
+        display: none;
+    }
+
+    .admin-edit-physician-form-view-content{
+        display: none;
+    }
+
+    .admin-edit-physician-form-view{
+        height: 2.8rem;
+        width: 3rem;
+    }
+
+    .admin-edit-physician-form-upload-icon-content{
+        height: 2.8rem;
+        width: 3rem;
+    }
+
+    .admin-edit-physician-form-upload-icon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .admin-edit-physician-form-view-icon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .admin-edit-physician-document-view-upload-button{
+        flex-direction: column;
+    }
+
+    .admin-edit-physician-document-content-buttons {
+        display: flex;
+        align-items: start;
+    }
+}
+
+@media (max-width:500px) {
+
+    
+    .below-nav-content-admin {
+        margin: 0.8rem;
+    }
+    .main-component-admin-dashboard {
+        padding: 0rem;
+    }
+
+    .below-nav-content-patient-document {
+        margin: 0.8rem;
+    }
+
+    .admin-edit-physician-form-edit-button {
+        height: 44px;
+        width: 4rem;
+    }
+
+    .admin-edit-physician-form-reset-password-button {
+        height: 44px;
+        width: 9rem;
+    }
+    .admin-edit-physician-form-payrate-button {
+        height: 44px;
+        width: 8rem;
+    }
+    .admin-edit-physician-create-button-content{
+        display: none;
+    }
+}

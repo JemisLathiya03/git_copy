@@ -1,0 +1,150 @@
+.below-nav-content-admin-dashboard {
+    min-height: 50vh;
+}
+
+.main-component-below-padding {
+    padding-bottom: 3rem;
+}
+
+.admin-all-main-component {
+    width: 70%;
+    margin: auto;
+}
+
+.main-component-admin-dashboard {
+    padding: 1rem;
+}
+
+.admin-all-heading-and-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.7rem;
+}
+
+.admin-document-heading {
+    font-size: 1.5rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+}
+
+.admin-back-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+    color: #01bce9;
+    border: 2px solid #01bce9;
+    border-radius: 0.4rem;
+    padding: 0.5rem 0.8rem;
+    background: transparent;
+    cursor: pointer;
+
+}
+
+.admin-back-button a {
+    display: flex;
+    text-decoration: none;
+    color: #01bce9;
+}
+
+.admin-back-button a:active {
+    color: #ffffff;
+    background-color: #01bce9;
+}
+
+.admin-back-button svg {
+    color: #01bce9;
+}
+
+.admin-below-all-main-component {
+    border-radius: 1rem;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 6px grey;
+}
+
+.add-business-main-component{
+    padding: 1rem;
+}
+
+.add-business-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 0.4rem;
+}
+.add-business-submit-button{
+    background-color: #01bce9;
+    border: 1px solid #01bce9;
+    border-radius: 0.4rem;
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+    color: #ffffff;
+    font-weight: 400;
+}
+
+.add-business-cancel-button{
+  background: transparent;
+    border: 1px solid #01bce9;
+    border-radius: 0.4rem;
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+    color: #01bce9;
+    font-weight: 400;
+}
+
+.add-business-main-heading-element{
+    margin-bottom: 0.8rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+@media (max-width:1100px) {
+    .admin-all-main-component {
+        width: 80%;
+    }
+}
+
+@media (max-width:960px) {
+    .admin-all-main-component {
+        width: 85%;
+    }
+}
+
+@media (max-width:767px) {
+    .admin-all-main-component {
+        width: 100%;
+    }
+    
+    .below-nav-content-admin {
+        margin: 1rem;
+    }
+    .below-nav-content-patient-document {
+        margin: 1rem;
+    }
+
+    .main-component-admin-dashboard {
+        padding: 0.5rem;
+    }
+
+    
+}
+
+@media (max-width:500px) {
+
+    
+    .below-nav-content-admin {
+        margin: 0.8rem;
+    }
+    .main-component-admin-dashboard {
+        padding: 0rem;
+    }
+
+    .below-nav-content-patient-document {
+        margin: 0.8rem;
+    }
+
+}

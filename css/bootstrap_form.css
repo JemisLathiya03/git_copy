@@ -1,0 +1,133 @@
+.bootstrap-form-customize .form-control {
+    border: 1px solid #c2c2c2;
+
+}
+
+.bootstrap-form-customize .form-floating>label {
+    color: #8f8f8f;
+    transition: transform 0.2s ease-in-out;
+    padding: 0.7rem 0.75rem;
+}
+
+.bootstrap-form-customize .form-floating>.form-control:focus {
+    border-color: #01bce9;
+    outline: 0;
+    box-shadow: none;
+}
+
+.bootstrap-form-customize .form-check-input[type=checkbox] {
+    border-radius: 0.25em;
+    border: 1px solid #c2c2c2;
+}
+
+.bootstrap-form-customize .form-check .form-check-input {
+    float: left;
+    margin-left: -1.5em;
+    border: 1px solid #c2c2c2;
+    width: 1.2rem;
+    height: 1.2rem;
+    cursor: pointer;
+}
+
+.bootstrap-form-customize .form-check-input:checked {
+    background-color: #01bce9;
+    border-color: #01bce9;
+}
+.bootstrap-form-customize .form-check-input:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+.bootstrap-form-customize .form-check .form-check-label{
+    cursor: pointer;
+}
+
+.bootstrap-form-customize .form-floating>.form-control-plaintext~label,
+.bootstrap-form-customize .form-floating>.form-control:focus~label,
+.bootstrap-form-customize .form-floating>.form-select:focus~label {
+    color: #01bce9;
+    transition: transform 0.2s ease-in-out;
+}
+
+.bootstrap-form-customize .form-floating>.form-control-plaintext:focus,
+.bootstrap-form-customize .form-floating>.form-control-plaintext:not(:placeholder-shown),
+.bootstrap-form-customize .form-floating>.form-control:focus,
+.bootstrap-form-customize .form-floating>.form-control:not(:placeholder-shown) {
+    padding-top: 1.625rem;
+    padding-bottom: 0.625rem;
+}
+
+
+.bootstrap-form-customize .form-floating>.plain-text {
+    height: 52px;
+    min-height: 52px;
+    padding: 0.75em 0.75em;
+}
+
+.bootstrap-form-customize .form-floating>.plain-text-label {
+    padding: 0.75em 0.75em;
+    transition: transform 0.2s ease-in-out;
+}
+
+.bootstrap-form-customize .form-floating>.form-control-plaintext~label::after,
+.bootstrap-form-customize .form-floating>.form-control:focus~label::after,
+.bootstrap-form-customize .form-floating>.form-control:not(:placeholder-shown)~label::after,
+.bootstrap-form-customize .form-floating>.form-select~label::after {
+    background: transparent;
+    background-color: transparent;
+}
+
+.bootstrap-form-customize .form-floating>.form-select {
+    border: 1px solid #c2c2c2;
+    --bs-form-select-bg-img: url("../images/down-arrow-dropdown.svg");
+    padding-top: 1.2rem;
+    padding-bottom: 0.45rem;
+    min-height: 52px;
+}
+
+.bootstrap-form-customize .form-select {
+    height: 52px;
+    border: 1px solid #c2c2c2;
+    --bs-form-select-bg-img: url("../images/down-arrow-dropdown.svg");
+    padding: 0.6rem 2.25rem .6rem .75rem;
+}
+
+
+.bootstrap-form-customize .form-select:focus {
+    border-color: #01bce9;
+    outline: 0;
+    box-shadow: none;
+}
+
+.bootstrap-form-customize .form-control:focus {
+    border-color: #01bce9;
+    outline: 0;
+    box-shadow: none;
+}
+
+
+.plateform-input-custom-form {
+    position: relative;
+}
+
+.plateform-input-custom-form input:focus {
+    border: 1px solid #01bce9 ;
+    outline: none;
+}
+
+.plateform-input-form-custom-form {
+    padding: 1rem .75em;
+    line-height: 1.25;
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 400;
+    border-radius: 5px;
+    border: 1px solid #c2c2c2;
+    background: transparent;
+    height: 52px;
+}
+
+.plateform-input-form-color-custom-form{
+    border: 1px solid #c2c2c2;
+}
